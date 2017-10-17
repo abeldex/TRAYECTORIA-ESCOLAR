@@ -1,5 +1,0 @@
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\ImagenDownloader\ImagenDownloader\bin\Debug\ImagenDownloader.exe
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\ImagenDownloader\ImagenDownloader\bin\Debug\ImagenDownloader.pdb
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\ImagenDownloader\ImagenDownloader\obj\Debug\ImagenDownloader.csprojResolveAssemblyReference.cache
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\ImagenDownloader\ImagenDownloader\obj\Debug\ImagenDownloader.exe
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\ImagenDownloader\ImagenDownloader\obj\Debug\ImagenDownloader.pdb

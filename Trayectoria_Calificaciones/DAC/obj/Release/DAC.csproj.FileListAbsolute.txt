@@ -1,8 +1,0 @@
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Release\DAC.dll.config
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Release\DAC.dll
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Release\DAC.pdb
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Release\Entidades.dll
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Release\Entidades.pdb
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Release\DAC.csprojResolveAssemblyReference.cache
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Release\DAC.dll
-C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Release\DAC.pdb
