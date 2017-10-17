@@ -1,0 +1,26 @@
+c:\users\lamasperrona\documents\visual studio 2015\Projects\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\Trayectoria_Calificaciones.exe
+c:\users\lamasperrona\documents\visual studio 2015\Projects\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\Trayectoria_Calificaciones.pdb
+c:\users\lamasperrona\documents\visual studio 2015\Projects\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.csprojResolveAssemblyReference.cache
+c:\users\lamasperrona\documents\visual studio 2015\Projects\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.Form1.resources
+c:\users\lamasperrona\documents\visual studio 2015\Projects\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.Properties.Resources.resources
+c:\users\lamasperrona\documents\visual studio 2015\Projects\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.csproj.GenerateResource.Cache
+c:\users\lamasperrona\documents\visual studio 2015\Projects\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.exe
+c:\users\lamasperrona\documents\visual studio 2015\Projects\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.pdb
+C:\Users\LaMasPerrona\Desktop\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.exe
+C:\Users\LaMasPerrona\Desktop\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.pdb
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.exe
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.pdb
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\Trayectoria_Calificaciones.exe
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\Trayectoria_Calificaciones.pdb
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.csprojResolveAssemblyReference.cache
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.Form1.resources
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.FormCapturar.resources
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.Properties.Resources.resources
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\obj\Debug\Trayectoria_Calificaciones.csproj.GenerateResource.Cache
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\Trayectoria_Calificaciones.exe.config
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\Entidades.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\Negocio.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\DAC.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\Entidades.pdb
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\Negocio.pdb
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Trayectoria_Calificaciones\bin\Debug\DAC.pdb

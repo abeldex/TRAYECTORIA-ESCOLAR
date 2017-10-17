@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TRAYECTORIA_ESCOLAR" Class="DataClassesTrayectoriaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=148.227.28.3;Initial Catalog=TRAYECTORIA_ESCOLAR;Persist Security Info=True;User ID=sa" SettingsObjectName="DAC.Properties.Settings" SettingsPropertyName="TRAYECTORIA_ESCOLARConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.calificaciones3" Member="calificaciones3">
+    <Type Name="calificaciones3">
+      <Column Name="id_calificacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="folio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cuenta" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="calificacion" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.folios_ordinarios" Member="folios_ordinarios">
+    <Type Name="folios_ordinarios">
+      <Column Name="folio" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cohorte" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="periodo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="grupo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fecha" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="carrera" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="materia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="maestro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tipo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Alumno" Member="Alumno">
+    <Type Name="Alumno">
+      <Column Name="numCuenta" Type="System.String" DbType="VarChar(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NombreAlumno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idGrupo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCarrera" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="imagen" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="fecha_ingreso" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="turno" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PromedioPreparatoria" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="Ceneval" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="idPreparatoria" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fecha_nacimiento" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Celular" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Correo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RFC" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CURP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Seguro" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TipoSeguro" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LugarOrigen" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="idMunicipio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="tutor" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="direccionTutor" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="telefonoTutor" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="idPrepa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idSemestre" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Promedio" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Cohorte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="desertor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="rezagado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="baja" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="GrupoCarrera" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materias" Member="Materias">
+    <Type Name="Materias">
+      <Column Name="idMateria" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idSemestre" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NombreMateria" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="idCarrera" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Maestros" Member="Maestros">
+    <Type Name="Maestros">
+      <Column Name="id_maestro" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_maestro" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estado" Member="Estado">
+    <Type Name="Estado">
+      <Column Name="id_estado" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Municipio" Member="Municipio">
+    <Type Name="Municipio">
+      <Column Name="id_municipio" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_municipio" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Preparatorias" Member="Preparatorias">
+    <Type Name="Preparatorias">
+      <Column Name="idPreparatoria" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NombrePreparatoria" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Regimen" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="UAS" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ViewAlumnos" Member="ViewAlumnos">
+    <Type Name="ViewAlumnos">
+      <Column Name="CUENTA" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Cohorte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SEMESTRE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GRUPO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CARRERA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="turno" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="desertor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="baja" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="rezagado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.ins_calificacion" Method="ins_calificacion">
+    <Parameter Name="folio" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cuenta" Type="System.String" DbType="VarChar(9)" />
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="calificacion" Type="System.Double" DbType="Float" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ins_folios_ord" Method="ins_folios_ord">
+    <Parameter Name="folio" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cohorte" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="periodo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="grupo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="fecha" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="carrera" Type="System.Int32" DbType="Int" />
+    <Parameter Name="materia" Type="System.Int32" DbType="Int" />
+    <Parameter Name="maestro" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tipo" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EditAlumno" Method="EditAlumno">
+    <Parameter Name="numcuenta" Type="System.String" DbType="VarChar(9)" />
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(80)" />
+    <Parameter Name="grupo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sexo" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="promprepa" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="ceneval" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="fecha_ingreso" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="turno" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="fecha_nacimiento" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="telefono" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="celular" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="correo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RFC" Parameter="rFC" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CURP" Parameter="cURP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="semestre" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cohorte" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="direccion" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="msg" Type="System.String" DbType="VarChar(100)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteAlumno" Method="DeleteAlumno">
+    <Parameter Name="codigo" Type="System.String" DbType="VarChar(9)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Baja" Method="Baja">
+    <Parameter Name="numcuenta" Type="System.String" DbType="VarChar(9)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Desertor" Method="Desertor">
+    <Parameter Name="numcuenta" Type="System.String" DbType="VarChar(9)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insPreparatoria" Method="insPreparatoria">
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="regimen" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="uas" Type="System.Char" DbType="Char(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insPreparatoria" Method="insPreparatoria1">
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="regimen" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="uas" Type="System.Char" DbType="Char(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insAlumno" Method="insAlumno">
+    <Parameter Name="numcuenta" Type="System.String" DbType="VarChar(9)" />
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(80)" />
+    <Parameter Name="grupo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="carrera" Type="System.Int32" DbType="Int" />
+    <Parameter Name="sexo" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="promprepa" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="ceneval" Type="System.Decimal" DbType="Decimal(10,2)" />
+    <Parameter Name="fecha_ingreso" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="turno" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="prepa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="fecha_nacimiento" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="telefono" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="celular" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="correo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RFC" Parameter="rFC" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CURP" Parameter="cURP" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Seguro" Parameter="seguro" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="tipoSeguro" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lugar_origen" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="municipio" Type="System.Int32" DbType="Int" />
+    <Parameter Name="direccion" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="tutor" Type="System.String" DbType="VarChar(80)" />
+    <Parameter Name="dire_tutor" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="tel_tutor" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="semestre" Type="System.Int32" DbType="Int" />
+    <Parameter Name="promedio" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cohorte" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.EditAlumnoBasico" Method="EditAlumnoBasico">
+    <Parameter Name="numcuenta" Type="System.String" DbType="VarChar(9)" />
+    <Parameter Name="cuentanew" Type="System.String" DbType="VarChar(9)" />
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(80)" />
+    <Parameter Name="grupo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="turno" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="semestre" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cohorte" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="carrera" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Rezago" Method="Rezago">
+    <Parameter Name="numcuenta" Type="System.String" DbType="VarChar(9)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

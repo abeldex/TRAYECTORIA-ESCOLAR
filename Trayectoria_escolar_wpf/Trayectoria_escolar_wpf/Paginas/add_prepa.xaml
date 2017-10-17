@@ -1,0 +1,66 @@
+﻿<Window x:Class="Trayectoria_escolar_wpf.Paginas.add_prepa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:domain1="clr-namespace:Trayectoria_escolar_wpf"
+        Title="Buscar alumno" Height="280.754" Width="329" WindowStyle="ToolWindow"  ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        Topmost="True"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- note you only need bring in these extra resource dictionaries when using non-default styles, so only bring them into your controls where the default style is not what you want -->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ComboBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Slider.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBox.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource MaterialDesignTextBox}">
+                <Setter Property="Margin" Value="0 8 0 8" />
+            </Style>
+            <Style TargetType="{x:Type PasswordBox}" BasedOn="{StaticResource MaterialDesignPasswordBox}">
+                <Setter Property="Margin" Value="0 8 0 8" />
+            </Style>
+            <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource MaterialDesignComboBox}">
+                <Setter Property="HorizontalAlignment" Value="Stretch" />
+                <Setter Property="Margin" Value="0 8 0 8" />
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid RenderTransformOrigin="0,0" Height="288" VerticalAlignment="Top" Margin="0,0,0,-61">
+
+        <materialDesign:ColorZone Padding="10" materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                                            Mode="PrimaryMid" DockPanel.Dock="Top" Background="#FF454C74">
+            <DockPanel>
+                <materialDesign:PackIcon DockPanel.Dock="Left" Kind="School" Height="24" Width="24" />
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18">Agregar Preparatoria</TextBlock>
+            </DockPanel>
+        </materialDesign:ColorZone>
+        <Button Style="{StaticResource MaterialDesignFloatingActionButton}"
+            Margin="181,175,0,69" HorizontalAlignment="Left"
+            ToolTip="Guardar" Height="45" Width="45" Background="Green" BorderBrush="{x:Null}" Click="Button_Click" >
+            <materialDesign:PackIcon Kind="Check" Height="30" Width="30"/>
+        </Button>
+        <Button Style="{StaticResource MaterialDesignFloatingActionButton}"
+            Margin="98,175,0,69" HorizontalAlignment="Left" Click="Button_Click_1"
+            ToolTip="Cancelar" Height="45" Width="45" Background="Red" BorderBrush="{x:Null}" >
+            <materialDesign:PackIcon Kind="Close" Height="30" Width="30" />
+        </Button>
+        <materialDesign:PackIcon  HorizontalAlignment="Left" Height="24" Width="24" Margin="20,55,0,0" VerticalAlignment="Top" Kind="School"  Foreground="{Binding BorderBrush, ElementName=txt_usuario}" />
+        <TextBox x:Name="txt_nombreprepa" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Nombre Preparatoria" Height="53" Margin="60,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" TextOptions.TextHintingMode="Animated"/>
+        <materialDesign:PackIcon  HorizontalAlignment="Left" Height="24" Width="24" Margin="20,93,0,0" VerticalAlignment="Top" Kind="School"  Foreground="{Binding BorderBrush, ElementName=txt_usuario}" />
+        <ComboBox x:Name="cmb_regimen" HorizontalAlignment="Left" Margin="60,88,0,0" VerticalAlignment="Top" Width="231" materialDesign:HintAssist.Hint="Régimen">
+            <ComboBoxItem Content="Pública" Tag="Pública"/>
+            <ComboBoxItem Content="Privada" Tag="Privada"/>
+        </ComboBox>
+        <materialDesign:PackIcon  HorizontalAlignment="Left" Height="24" Width="24" Margin="20,136,0,0" VerticalAlignment="Top" Kind="School"  Foreground="{Binding BorderBrush, ElementName=txt_usuario}" />
+        <ComboBox x:Name="cmb_uas" HorizontalAlignment="Left" Margin="60,131,0,0" VerticalAlignment="Top" Width="231" materialDesign:HintAssist.Hint="Pertenece a la UAS">
+            <ComboBoxItem Content="Si" Tag="S"/>
+            <ComboBoxItem Content="No" Tag="N"/>
+        </ComboBox>
+    </Grid>
+</Window>
+

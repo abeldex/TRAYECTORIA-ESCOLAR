@@ -1,0 +1,16 @@
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\DAC.dll.config
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\DAC.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\DAC.pdb
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\Entidades.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\Entidades.pdb
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Debug\DAC.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Debug\DAC.pdb
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\DAC.dll.config
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\DAC.dll
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\DAC.pdb
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\Entidades.dll
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\bin\Debug\Entidades.pdb
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Debug\DAC.dll
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Debug\DAC.pdb

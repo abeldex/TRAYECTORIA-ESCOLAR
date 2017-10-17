@@ -1,0 +1,123 @@
+﻿<Window x:Class="Trayectoria_escolar_wpf.Paginas.captura_calificaciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        Title="Capturar Calificaciones" Topmost="False" Height="1000" Width="1087" ResizeMode="CanResize" ShowInTaskbar="True" WindowStartupLocation="CenterOwner"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- note you only need bring in these extra resource dictionaries when using non-default styles, so only bring them into your controls where the default style is not what you want -->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ComboBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Slider.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBox.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource MaterialDesignTextBox}">
+                <Setter Property="Margin" Value="0 8 0 8" />
+            </Style>
+            <Style TargetType="{x:Type PasswordBox}" BasedOn="{StaticResource MaterialDesignPasswordBox}">
+                <Setter Property="Margin" Value="0 8 0 8" />
+            </Style>
+            <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource MaterialDesignComboBox}">
+                <Setter Property="HorizontalAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0 0 0 0" />
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    <!---->
+    <ScrollViewer CanContentScroll="True">
+        <StackPanel x:Name="panel_principal">
+            <Grid VerticalAlignment="Top" Margin="0,0,0,0">
+        <Image x:Name="image" Source="../Resources/images/banner_acta.png" Stretch="None" HorizontalAlignment="Left" Height="181" Margin="0,51,0,-78" VerticalAlignment="Top" Width="1026"/>
+
+
+        <materialDesign:ColorZone Padding="10" materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                                            Mode="PrimaryMid" DockPanel.Dock="Top" Background="#FF454C74">
+            <DockPanel>
+                <materialDesign:PackIcon DockPanel.Dock="Left" Kind="Numeric" Height="24" Width="24" />
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18"><Run Text="Capturar Calificaciones"/></TextBlock>
+            </DockPanel>
+        </materialDesign:ColorZone>
+         <!--botones -->
+            <Button Style="{StaticResource MaterialDesignFloatingActionButton}"
+                                Margin="0,70,10,0" HorizontalAlignment="Right" VerticalAlignment="Top"
+                                ToolTip="Mostrar Alumnos" Height="48" Width="48" RenderTransformOrigin="0.444,2.25" Click="Button_Click_1">
+                <materialDesign:PackIcon Kind="ViewList" Height="24" Width="24" />
+            </Button>
+    <!---->
+        <ComboBox x:Name="combo_carrera" HorizontalAlignment="Left" Margin="221,226,0,-88" VerticalAlignment="Top" Width="403" Height="28" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" SelectionChanged="combo_carrera_SelectionChanged">
+            <ComboBoxItem Content="CIENCIAS DE LA TIERRA T.C." Tag="0"/>
+            <ComboBoxItem Content="LICENCIATURA EN INGENIERÍA GEODÉSICA" Tag="1" />
+            <ComboBoxItem Content="LICENCIATURA EN INGENIERÍA GEOMÁTICA" Tag="2"/>
+            <ComboBoxItem Content="LICENCIATURA EN ASTRONOMÍA" Tag="3"/>
+        </ComboBox>
+        <ComboBox x:Name="combo_materia" HorizontalAlignment="Left" Margin="221,257,0,-84" VerticalAlignment="Top" Width="573" Height="28" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Cursor="Hand"/>
+        <ComboBox x:Name="combo_profesor" HorizontalAlignment="Left" Margin="221,289,0,-116" VerticalAlignment="Top" Width="403" Height="28" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Cursor="Hand"/>
+        <Label x:Name="label_Copy" Content="CARRERA:" HorizontalAlignment="Left" Margin="39,232,0,-105" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
+        <Label x:Name="label_Copy1" Content="MATERIA:" HorizontalAlignment="Left" Margin="39,261,0,-87" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
+        <Label x:Name="label_Copy2" Content="PROFESOR:" HorizontalAlignment="Left" Margin="39,291,0,-117" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
+        <Label x:Name="label_Copy3" Content="NUMERO DE CUENTA" HorizontalAlignment="Left" Margin="39,322,0,-148" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
+        <Label x:Name="label_Copy4" Content="N O M B R E  D E L  A L U M N O" HorizontalAlignment="Left" Margin="321,322,0,-148" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
+        <Label x:Name="label_Copy5" Content="CALIFICACIÓN" HorizontalAlignment="Left" Margin="677,322,0,-148" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
+        <Label x:Name="label_Copy6" Content="AGREGAR" HorizontalAlignment="Left" Margin="921,322,0,-131" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black"/>
+        <TextBox x:Name="txt_folio" HorizontalAlignment="Left" Height="33" Margin="917,170,0,-2" TextWrapping="Wrap" Text="00000000" VerticalAlignment="Top" Width="134" FontFamily="Arial" FontSize="21" FontWeight="Bold" Foreground="Red" SelectionBrush="Red"/>
+        <Label x:Name="label_Copy7" Content="PERIODO:" HorizontalAlignment="Left" Margin="842,232,0,-58" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
+        <Label x:Name="label_Copy8" Content="GRUPO:" HorizontalAlignment="Left" Margin="842,261,0,-87" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
+        <Label x:Name="label_Copy9" Content="FECHA:" HorizontalAlignment="Left" Margin="842,291,0,-117" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
+        <TextBox x:Name="txt_periodo" HorizontalAlignment="Left" Height="28" Margin="943,226,0,-53" TextWrapping="Wrap" Text="?" MaxLength="1" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black" SelectionBrush="Red"/>
+        <TextBox x:Name="txt_grupo" HorizontalAlignment="Left" Height="28" Margin="943,257,0,-84" TextWrapping="Wrap" Text="?" MaxLength="1" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black" SelectionBrush="Red"/>
+        <DatePicker x:Name="txt_fecha" HorizontalAlignment="Left" Height="28" Margin="943,289,0,-116" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black"/>   
+        <DataGrid HeadersVisibility="None" x:Name="dgvAlumnos" Margin="39,354,13,-536" AutoGenerateColumns="False"  Height="500" FontFamily="Arial" FontSize="13" EnableRowVirtualization="False" Background="White" BorderBrush="#89C1C1C1" CellEditEnding="dgvAlumnos_CellEditEnding" BeginningEdit="dgvAlumnos_BeginningEdit" CurrentCellChanged="dgvAlumnos_CurrentCellChanged" >
+        	<DataGrid.Columns>
+        		<DataGridTextColumn Header="NUMERO DE CUENTA" Binding="{Binding CUENTA}" IsReadOnly="True" Width="170" />
+                <DataGridTextColumn Header="N O M B R E  D E L  A L U M N O" Binding="{Binding NOMBRE}" IsReadOnly="True" Width="460"/>
+                <DataGridTextColumn Header="CALIFICACION" IsReadOnly="True" Width="150" FontWeight="Bold" FontSize="14"> 
+                    <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="CAL_LETRA" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Header="AGREGAR" IsReadOnly="False" Width="80">
+                    <DataGridTextColumn.ElementStyle>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                        <Setter Property="Background" Value="White"></Setter>
+                    </Style>
+                </DataGridTextColumn.ElementStyle>
+               </DataGridTextColumn>
+                
+        	</DataGrid.Columns>
+            <DataGrid.RowStyle>
+            <Style TargetType="DataGridRow"> 
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding baja}" Value="True">
+                        <Setter Property="Foreground" Value="Red"></Setter>
+                    </DataTrigger>
+                    <DataTrigger Binding="{Binding desertor}" Value="True">
+                        <Setter Property="Foreground" Value="Purple"></Setter>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </DataGrid.RowStyle>
+        </DataGrid>
+        <Label x:Name="label_Copy10" Content="COHORTE:" HorizontalAlignment="Left" Margin="842,143,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
+        <TextBox x:Name="txt_cohorte" HorizontalAlignment="Left" Height="28" Margin="943,137,0,0" TextWrapping="Wrap" Text="0000-0000" MaxLength="9" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black" SelectionBrush="Red"/>
+        <Button Style="{StaticResource MaterialDesignFloatingActionButton}"
+        	Margin="0,70,65,0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="Green"
+        	ToolTip="Guardar" Height="48" Width="48" RenderTransformOrigin="0.444,2.25" Click="Button_Click_2">
+        	<materialDesign:PackIcon Kind="Floppy" Height="24" Width="24" />
+        </Button>
+            </Grid>
+            
+            
+        </StackPanel>
+    </ScrollViewer>
+  
+</Window>

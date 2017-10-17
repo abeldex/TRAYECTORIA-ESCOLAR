@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesTrayectoria">
+  <DataContextMoniker Name="/DataClassesTrayectoriaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1c3891a6-605e-4fb1-bd03-0d4cbbc5099e" absoluteBounds="0.625, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/calificaciones3" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a1267d4-a9dd-437d-a9e2-32658facdb44" absoluteBounds="0.64000000000000012, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7820e866-2a3e-463e-85c3-fe21fd24f137" absoluteBounds="3.125, 0.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/folios_ordinarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c356863-0666-44ef-9961-34c3f2f7686f" absoluteBounds="3.14, 1.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a0ebe8e4-3aba-4b65-a2bc-728ef06aa95a" absoluteBounds="5.375, 0.875, 2, 7.1553369140625">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/Alumno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2110484-1f1c-4903-afb5-b3b82c02d067" absoluteBounds="5.39, 1.335, 1.9700000000000002, 6.5953369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddb7b0c4-2d4c-4e2e-b60a-f8329e6dd894" absoluteBounds="7.5, 1, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/Materias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="858e499d-f1ba-4152-b1e0-07fcbf0c2701" absoluteBounds="7.5150000000000006, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6844f943-718d-4417-8568-1e8d810efafe" absoluteBounds="3.125, 3.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/Maestros" />
+      <nestedChildShapes>
+        <elementListCompartment Id="015ecf20-673b-44b0-94b4-c4d392ff51da" absoluteBounds="3.14, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e40ddfae-9133-4c7f-91b6-85cdade2d1a6" absoluteBounds="7.5, 2.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/Estado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d203600c-180b-44ce-95f0-313a100f58d7" absoluteBounds="7.5150000000000006, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb28acf3-b429-49bc-88d2-2f1978fc0b6a" absoluteBounds="7.5, 4.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/Municipio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66bcf486-5aca-4aa0-a48f-c460fbd2a503" absoluteBounds="7.515, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19e2b29f-83e3-409d-b60b-50fb4d3a0f24" absoluteBounds="0.75, 5.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/Preparatorias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1feba877-4848-4c34-9bbc-e9e002e0725c" absoluteBounds="0.76500000000000012, 6.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5073536-91b1-47a5-84f7-b1fab3845d05" absoluteBounds="0.625, 2.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/ViewAlumnos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f921faaf-c683-435b-a21b-b1b4fa30e758" absoluteBounds="0.64000000000000012, 3.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

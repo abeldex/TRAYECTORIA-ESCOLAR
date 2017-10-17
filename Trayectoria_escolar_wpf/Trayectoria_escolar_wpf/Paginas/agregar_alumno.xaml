@@ -1,0 +1,130 @@
+﻿<Window x:Class="Trayectoria_escolar_wpf.Paginas.agregar_alumno"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        Title="Agregar alumno" Height="655.5" Width="1274.5" WindowStyle="ToolWindow"  ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        Topmost="False"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- note you only need bring in these extra resource dictionaries when using non-default styles, so only bring them into your controls where the default style is not what you want -->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ComboBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Slider.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBox.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource MaterialDesignTextBox}">
+                <Setter Property="Margin" Value="0 8 0 8" />
+            </Style>
+            <Style TargetType="{x:Type PasswordBox}" BasedOn="{StaticResource MaterialDesignPasswordBox}">
+                <Setter Property="Margin" Value="0 8 0 8" />
+            </Style>
+            <Style TargetType="{x:Type ComboBox}" BasedOn="{StaticResource MaterialDesignComboBox}">
+                <Setter Property="HorizontalAlignment" Value="Stretch" />
+                <Setter Property="Margin" Value="0 8 0 8" />
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid RenderTransformOrigin="0.537,0.268" Height="322" VerticalAlignment="Top" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="269*"/>
+            <ColumnDefinition Width="999*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Grid.Row="0" Header="Información Personal" Style="{DynamicResource MaterialDesignGroupBox}" Margin="10,15,620,17" materialDesign:ShadowAssist.ShadowDepth="Depth2" BorderThickness="0" Grid.ColumnSpan="2"/>
+        <materialDesign:PackIcon Kind="Account" Height="24" Width="24" Margin="20,70,0,0" Foreground="Gray" />
+        <TextBox TabIndex="0" x:Name="txtNombre" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Nombre(s)" Margin="49,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black"/>
+        <TextBox TabIndex="2" x:Name="txtApellidoMaterno" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Apellido Materno" Margin="192,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="163" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="GenderMaleFemale" Height="24" Width="24" Margin="20,116,0,0" Foreground="Gray" />
+        <DatePicker TabIndex="4" x:Name="mtxtFechaNacimiento" HorizontalAlignment="Left" Height="36"  materialDesign:HintAssist.Hint="Fecha de Nacimiento" VerticalAlignment="Top" Width="154" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Margin="10,110,0,0" KeyDown="mtxtFechaNacimiento_KeyDown" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="Cake" Height="24" Width="24" Margin="243,120,0,0" Foreground="Gray" />
+        <TextBox TabIndex="1" x:Name="txtApellidoPaterno" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Apellido Paterno" Margin="260,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.ColumnSpan="2"/>
+        <ComboBox TabIndex="3" x:Name="cmbSexos" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Género" Margin="49,108,0,0" VerticalAlignment="Top" Width="179" Height="36" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand">
+            <ComboBoxItem Content="MASCULINO" Tag="M"/>
+            <ComboBoxItem Content="FEMENINO" Tag="F" />
+        </ComboBox>
+        <ComboBox TabIndex="5" x:Name="cmbEstados" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Estado de nacimiento" Margin="221,108,0,0" VerticalAlignment="Top" Width="134" Height="36" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" Loaded="cmbEstados_Loaded" SelectionChanged="cmbEstados_SelectionChanged" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="HomeMapMarker" Height="24" Width="24" Margin="192,116,0,0" Foreground="Gray" Grid.Column="1" />
+        <ComboBox TabIndex="8" x:Name="cmbMunicipios" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Municipio de nacimiento" Margin="192,158,0,0" VerticalAlignment="Top" Width="163" Height="36" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" Grid.Column="1"/>
+        <TextBox TabIndex="6" x:Name="txtCurp" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="CURP" Margin="49,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black"/>
+        <TextBox TabIndex="7" x:Name="txtRFC" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="RFC" Margin="10,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="FileDocument" Height="24" Width="24" Margin="20,165,0,0" Foreground="Gray" />
+        <materialDesign:PackIcon Kind="FileDocument" Height="24" Width="24" Margin="245,170,0,0" Foreground="Gray" />
+        <TextBox TabIndex="9" x:Name="txtDireccion" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Dirección" Margin="49,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="575" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.ColumnSpan="2"/>
+        <materialDesign:PackIcon Kind="Directions" Height="24" Width="24" Margin="20,223,0,0" Foreground="Gray" />
+        <TextBox TabIndex="10" x:Name="txtTelefono" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Teléfono" Margin="49,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black"/>
+        <materialDesign:PackIcon Kind="Phone" Height="24" Width="24" Margin="20,276,0,0" Foreground="Gray" />
+        <TextBox TabIndex="11" x:Name="txtCelular" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Celular" Margin="10,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="154" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="Cellphone" Height="24" Width="24" Margin="245,276,0,0" Foreground="Gray" />
+        <TextBox TabIndex="12" x:Name="txtCorreo" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Correo" Margin="221,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="Email" Height="24" Width="24" Margin="192,276,0,0" Foreground="Gray" Grid.Column="1" />
+        <GroupBox Grid.Row="0" Header="Información Académica" Style="{DynamicResource MaterialDesignGroupBox}" Margin="403,15,10,99" materialDesign:ShadowAssist.ShadowDepth="Depth2" BorderThickness="0" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="Cards" Height="24" Width="24" Margin="405,79,0,0" Foreground="Gray" Grid.Column="1" />
+        <TextBox TabIndex="13" x:Name="txtCuenta" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Número de Cuenta" Margin="434,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="114" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
+        <ComboBox TabIndex="14" x:Name="cmbCohorte" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Cohorte"  VerticalAlignment="Top" Width="173" Height="36" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" Margin="584,65,0,0" Grid.Column="1">
+            <ComboBoxItem Content="2020-2025" Tag="2020-2025"/>
+            <ComboBoxItem Content="2019-2024" Tag="2019-2024"/>
+            <ComboBoxItem Content="2018-2023" Tag="2018-2023"/>
+            <ComboBoxItem Content="2017-2022" Tag="2017-2022"/>
+            <ComboBoxItem Content="2016-2021" Tag="2016-2021"/>
+            <ComboBoxItem Content="2015-2020" Tag="2015-2020"/>
+            <ComboBoxItem Content="2014-2019" Tag="2014-2019"/>
+            <ComboBoxItem Content="2013-2018" Tag="2013-2018"/>
+            <ComboBoxItem Content="2012-2017" Tag="2012-2017"/>
+            <ComboBoxItem Content="2011-2016" Tag="2011-2016"/>
+            <ComboBoxItem Content="2010-2015" Tag="2010-2015"/>
+        </ComboBox>
+        <ComboBox TabIndex="16" x:Name="cmb_carrera" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Carrera" Margin="434,120,0,0" VerticalAlignment="Top" Width="341" Height="28" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" Grid.Column="1">
+            <ComboBoxItem Content="CIENCIAS DE LA TIERRA T.C." Tag="0"/>
+            <ComboBoxItem Content="LICENCIATURA EN INGENIERÍA GEODÉSICA" Tag="1" />
+            <ComboBoxItem Content="LICENCIATURA EN INGENIERÍA GEOMÁTICA" Tag="2"/>
+            <ComboBoxItem Content="LICENCIATURA EN ASTRONOMÍA" Tag="3"/>
+        </ComboBox>
+        <materialDesign:PackIcon Kind="Certificate" Height="24" Width="24" Margin="405,124,0,0" Foreground="Gray" Grid.Column="1" />
+        <ComboBox TabIndex="15" x:Name="cmb_semestre" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Semestre"  VerticalAlignment="Top" Width="168" Height="36" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" Margin="791,65,0,0" Grid.Column="1">
+            <ComboBoxItem Content="1" Tag="1"/>
+            <ComboBoxItem Content="2" Tag="2"/>
+            <ComboBoxItem Content="3" Tag="3"/>
+            <ComboBoxItem Content="4" Tag="4"/>
+            <ComboBoxItem Content="5" Tag="5"/>
+            <ComboBoxItem Content="6" Tag="6"/>
+            <ComboBoxItem Content="7" Tag="7"/>
+            <ComboBoxItem Content="8" Tag="8"/>
+            <ComboBoxItem Content="9" Tag="9"/>
+        </ComboBox>
+        <ComboBox TabIndex="17" x:Name="cmb_grupo" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Grupo"  VerticalAlignment="Top" Width="168" Height="36" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" Margin="791,110,0,0" Grid.Column="1">
+            <ComboBoxItem Content="1" Tag="1"/>
+            <ComboBoxItem Content="2" Tag="2"/>
+            <ComboBoxItem Content="3" Tag="3"/>
+        </ComboBox>
+        <ComboBox TabIndex="18" x:Name="cmb_turno" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Turno"  VerticalAlignment="Top" Width="181" Height="36" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" Margin="434,165,0,0" Grid.Column="1">
+            <ComboBoxItem Content="Matutino" Tag="Matutino"/>
+            <ComboBoxItem Content="Vespertino" Tag="Vespertino"/>
+        </ComboBox>
+        <DatePicker TabIndex="19" x:Name="txtFEchaIngreso" HorizontalAlignment="Left" Height="36"  materialDesign:HintAssist.Hint="Fecha de Ingreso" VerticalAlignment="Top" Width="203" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Margin="659,165,0,0" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="Timer" Height="24" Width="24" Margin="403,177,0,0" Foreground="Gray" Grid.Column="1" />
+        <GroupBox Grid.Row="0" Header="Información de Procedencia" Style="{DynamicResource MaterialDesignGroupBox}" Margin="10,330,620,-202" materialDesign:ShadowAssist.ShadowDepth="Depth2" BorderThickness="0" Grid.ColumnSpan="2"/>
+        <ComboBox TabIndex="20" x:Name="cmbPrepasUAS" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Preparatorias UAS"  VerticalAlignment="Top" Width="193" Height="36" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" Margin="48,374,0,-88" SelectionChanged="cmbPrepasUAS_SelectionChanged" DropDownClosed="cmbPrepasUAS_DropDownClosed"/>
+        <materialDesign:PackIcon Kind="School" Height="24" Width="24" Margin="19,384,0,-86" Foreground="Gray" />
+        <ComboBox TabIndex="21" x:Name="cmbPreparatoriasOtras" HorizontalAlignment="Left" materialDesign:HintAssist.Hint="Otras Preparatorias"  VerticalAlignment="Top" Width="236" Height="36" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" Margin="29,374,0,-88" SelectionChanged="cmbPreparatoriasOtras_SelectionChanged" DropDownClosed="cmbPreparatoriasOtras_DropDownClosed" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="School" Height="24" Width="24" Margin="268,384,0,-86" Foreground="Gray" Grid.ColumnSpan="2" />
+        <TextBox TabIndex="22" IsReadOnly="True" x:Name="txtPreparatoria" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Nombre de la preparatoria" Margin="48,418,0,-132" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="486" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.ColumnSpan="2"/>
+        <Button x:Name="bnNuevaPrepa" Content="Nueva" HorizontalAlignment="Left" Margin="289,378,0,-88" VerticalAlignment="Top" Width="85" Click="bnNuevaPrepa_Click" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="School" Height="24" Width="24" Margin="19,430,0,-132" Foreground="Gray" />
+        <TextBox TabIndex="23" x:Name="txtPromedioPrepa" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Promedio Preparatoria" Margin="48,472,0,-186" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="193" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black"/>
+        <TextBox TabIndex="24" x:Name="txtPromedioCeneval" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Promedio Ceneval" Margin="28,472,0,-186" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
+        <GroupBox Grid.Row="0" Header="Información de Familiar o Tutor" Style="{DynamicResource MaterialDesignGroupBox}" Margin="403,330,10,-202" materialDesign:ShadowAssist.ShadowDepth="Depth2" BorderThickness="0" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="Account" Height="24" Width="24" Margin="405,396,0,-98" Foreground="Gray" Grid.Column="1" />
+        <TextBox TabIndex="25" x:Name="txtNombreTutor" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Nombre Completo de Tutor" Margin="434,384,0,-98" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
+        <TextBox TabIndex="26" x:Name="txtDireccionTutor" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Dirección Tutor" Margin="434,445,0,-159" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="525" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="Directions" Height="24" Width="24" Margin="405,457,0,-159" Foreground="Gray" Grid.Column="1" />
+        <TextBox TabIndex="26" x:Name="txtTelefonoTutor" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Teléfono Tutor" Margin="722,383,0,-97" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
+        <materialDesign:PackIcon Kind="Phone" Height="24" Width="24" Margin="693,395,0,-97" Foreground="Gray" Grid.Column="1" />
+        <Button TabIndex="27" x:Name="btnGuardar" Content="Guardar Alumno" HorizontalAlignment="Left" Margin="826,560,0,-293" VerticalAlignment="Top" Width="163" Height="55" Click="btnGuardar_Click" Background="#FF3F9C47" BorderBrush="#FF45B450" Grid.Column="1"/>
+        <Button x:Name="BtnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="629,560,0,-294" VerticalAlignment="Top" Width="164" Height="56" Background="#FFDE2121" BorderBrush="#FFB40000" Click="BtnCancelar_Click" Grid.Column="1"/>
+    </Grid>
+</Window>
