@@ -1,0 +1,15 @@
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\bin\Debug\Entidades.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\bin\Debug\Entidades.pdb
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Debug\Entidades.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Debug\Entidades.pdb
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\bin\Debug\Entidades.dll
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\bin\Debug\Entidades.pdb
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Debug\Entidades.dll
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Debug\Entidades.pdb
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\bin\Debug\Entidades.dll
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\bin\Debug\Entidades.pdb
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.dll
+C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.pdb

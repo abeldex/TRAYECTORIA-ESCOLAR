@@ -74,15 +74,25 @@ namespace Trayectoria_escolar_wpf.Paginas
             combo_materia.SelectedIndex = 0;
            // MessageBox.Show(selectedTag);
             //cargar alumnos de esa carrera
-            dgvAlumnos.ItemsSource = new cn_alumnos().BuscarAlumno_cohorte_carrera(txt_cohorte.Text, int.Parse(selectedTag));
+            //dgvAlumnos.ItemsSource = new cn_alumnos().BuscarAlumno_cohorte_carrera(txt_cohorte.Text, int.Parse(selectedTag), int.Parse(txt_grupo.Text));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             try
-            { 
-                dgvAlumnos.ItemsSource = new cn_alumnos().BuscarAlumno_cohorte_grupo(txt_cohorte.Text, int.Parse(txt_grupo.Text));
-                    
+            {
+                var selectedTag = ((ComboBoxItem)combo_carrera.SelectedItem).Tag.ToString();
+                if (int.Parse(txt_periodo.Text) <= 4 && int.Parse(selectedTag) == 0)
+                {
+                    //mostramos a todos los alumnos 
+                    dgvAlumnos.ItemsSource = new cn_alumnos().BuscarAlumno_cohorte_grupo(txt_cohorte.Text, int.Parse(txt_grupo.Text));
+                }
+                else
+                {
+                    //si el periodo es de 5 para arriba quiere decir que los alumnos ya tienen carrera
+                    dgvAlumnos.ItemsSource = new cn_alumnos().BuscarAlumno_cohorte_carrera(txt_cohorte.Text, int.Parse(selectedTag), txt_grupo.Text);
+                }
+               
             }
             catch (Exception error)
             {
@@ -149,7 +159,7 @@ namespace Trayectoria_escolar_wpf.Paginas
                 for (int i = 0; i < dgvAlumnos.Items.Count-1; i++)
                 {
 
-                    for (int j = 0; j < dgvAlumnos.Columns.Count-2; j++)
+                    for (int j = 0; j < dgvAlumnos.Columns.Count-3; j++)
                     {    
                         //loop throught cell
                         DataGridCell cell = GetCell(i, j);
@@ -294,6 +304,56 @@ namespace Trayectoria_escolar_wpf.Paginas
         {
             
         }
-        
+
+        private void txt_periodo_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txt_periodo.Text = "";
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            editar_alumno();
+        }
+
+        private void editar_alumno()
+        {
+            try
+            {
+                //obtenemos los valores las columnas de la fila seleccionada para enviarlas a la ventana de edicion
+                TextBlock x = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+                TextBlock nombre = dgvAlumnos.Columns[1].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+                TextBlock turno = dgvAlumnos.Columns[5].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+                if (x != null)
+                {
+                    //preguntamos si deseea editar 
+                    MessageBoxResult result = MessageBox.Show("¿Desea editar el alumno: " + nombre.Text + " ?", "Confirmar", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        //abrimos la ventana de edicion mandando los valores obtenidos para que los recoga el contructor
+                        editar_alumno ea = new editar_alumno(x.Text, nombre.Text, txt_cohorte.Text, txt_periodo.Text, txt_grupo.Text, turno.Text, ((ComboBoxItem)combo_carrera.SelectedItem).Tag.ToString());
+                        ea.ShowDialog();
+                        //MessageBox.Show("ok");
+                    }
+                }
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show(ee.Message);
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            alumno_estado ee = new alumno_estado();
+            ee.Show();
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            //obtenemos los valores las columnas de la fila seleccionada para enviarlas a la ventana de edicion
+            TextBlock cuenta = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+            alumno_estado ee = new alumno_estado(cuenta.Text);
+            ee.Show();
+        }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_escolar_wpf\Trayectoria_escolar_wpf\App.xaml
-8493296026
+11169247584
 
-12886805755
-18-607305130
-MainWindow.xaml;Paginas\add_prepa.xaml;Paginas\agregar_alumno.xaml;Paginas\alumnos.xaml;Paginas\buscar_alumno.xaml;Paginas\captura_calificaciones.xaml;Paginas\editar_alumno.xaml;Test.xaml;
+15-807347886
+23-1262489237
+MainWindow.xaml;Paginas\add_prepa.xaml;Paginas\agregar_alumno.xaml;Paginas\alumnos.xaml;Paginas\alumno_estado.xaml;Paginas\buscar_alumno.xaml;Paginas\captura_calificaciones.xaml;Paginas\captura_extraordinarios.xaml;Paginas\editar_alumno.xaml;Paginas\folios_ordinarios.xaml;Test.xaml;
 
 False
 

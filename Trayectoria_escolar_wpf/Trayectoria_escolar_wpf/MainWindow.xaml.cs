@@ -37,5 +37,16 @@ namespace Trayectoria_escolar_wpf
             Paginas.captura_calificaciones captura = new Paginas.captura_calificaciones();
             captura.Show();
         }
+
+        private void ListBoxItem_MouseLeftButtonUp_2(object sender, MouseButtonEventArgs e)
+        {
+            Main.Content = new Paginas.folios_ordinarios();
+        }
+
+        private void ListBoxItem_MouseLeftButtonUp_3(object sender, MouseButtonEventArgs e)
+        {
+            Paginas.captura_extraordinarios extras = new Paginas.captura_extraordinarios();
+            extras.Show();
+        }
     }
 }

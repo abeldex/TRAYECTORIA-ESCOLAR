@@ -69,11 +69,27 @@
         <Label x:Name="label_Copy7" Content="PERIODO:" HorizontalAlignment="Left" Margin="842,232,0,-58" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
         <Label x:Name="label_Copy8" Content="GRUPO:" HorizontalAlignment="Left" Margin="842,261,0,-87" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
         <Label x:Name="label_Copy9" Content="FECHA:" HorizontalAlignment="Left" Margin="842,291,0,-117" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Background="#00000000"/>
-        <TextBox x:Name="txt_periodo" HorizontalAlignment="Left" Height="28" Margin="943,226,0,-53" TextWrapping="Wrap" Text="?" MaxLength="1" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black" SelectionBrush="Red"/>
-        <TextBox x:Name="txt_grupo" HorizontalAlignment="Left" Height="28" Margin="943,257,0,-84" TextWrapping="Wrap" Text="?" MaxLength="1" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black" SelectionBrush="Red"/>
+        <TextBox x:Name="txt_periodo" HorizontalAlignment="Left" Height="28" Margin="943,226,0,-53" TextWrapping="Wrap" Text="1" MaxLength="1" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black" SelectionBrush="Red" GotFocus="txt_periodo_GotFocus"/>
+        <TextBox x:Name="txt_grupo" HorizontalAlignment="Left" Height="28" Margin="943,257,0,-84" TextWrapping="Wrap" Text="1" MaxLength="1" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black" SelectionBrush="Red"/>
         <DatePicker x:Name="txt_fecha" HorizontalAlignment="Left" Height="28" Margin="943,289,0,-116" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black"/>   
         <DataGrid HeadersVisibility="None" x:Name="dgvAlumnos" Margin="39,354,13,-536" AutoGenerateColumns="False"  Height="500" FontFamily="Arial" FontSize="13" EnableRowVirtualization="False" Background="White" BorderBrush="#89C1C1C1" CellEditEnding="dgvAlumnos_CellEditEnding" BeginningEdit="dgvAlumnos_BeginningEdit" CurrentCellChanged="dgvAlumnos_CurrentCellChanged" >
-        	<DataGrid.Columns>
+        	 <DataGrid.ContextMenu>
+                <ContextMenu >
+                    <MenuItem Header="Editar Alumno" Click="MenuItem_Click" >
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="Pencil" Height="16" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator></Separator>
+                    <MenuItem Header="Estado" Click="MenuItem_Click_1" >
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon Kind="AccountAlert" Height="16" Width="16"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+            
+            <DataGrid.Columns>
         		<DataGridTextColumn Header="NUMERO DE CUENTA" Binding="{Binding CUENTA}" IsReadOnly="True" Width="170" />
                 <DataGridTextColumn Header="N O M B R E  D E L  A L U M N O" Binding="{Binding NOMBRE}" IsReadOnly="True" Width="460"/>
                 <DataGridTextColumn Header="CALIFICACION" IsReadOnly="True" Width="150" FontWeight="Bold" FontSize="14"> 
@@ -92,7 +108,7 @@
                     </Style>
                 </DataGridTextColumn.ElementStyle>
                </DataGridTextColumn>
-                
+                <DataGridTextColumn Header="Turno" Foreground="White" Binding="{Binding turno}" IsReadOnly="True" Width="170" />
         	</DataGrid.Columns>
             <DataGrid.RowStyle>
             <Style TargetType="DataGridRow"> 
@@ -113,6 +129,11 @@
         	Margin="0,70,65,0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="Green"
         	ToolTip="Guardar" Height="48" Width="48" RenderTransformOrigin="0.444,2.25" Click="Button_Click_2">
         	<materialDesign:PackIcon Kind="Floppy" Height="24" Width="24" />
+        </Button>
+        <Button Style="{StaticResource MaterialDesignFloatingActionButton}"
+            Margin="0,70,127,0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="orange" BorderBrush="White"
+            ToolTip="Revisar" Height="48" Width="48" RenderTransformOrigin="0.444,2.25" Click="Button_Click">
+            <materialDesign:PackIcon Kind="AccountAlert" Height="24" Width="24" />
         </Button>
             </Grid>
             

@@ -296,6 +296,127 @@ namespace Trayectoria_escolar_wpf.Paginas
             {
 
                 MessageBox.Show("Seleccione un alumno primero");
+
+            }
+        }
+
+        private void menu_egresado_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //obtenemos los valores las columnas de la fila seleccionada para enviarlas a la ventana de edicion
+                TextBlock cuenta = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+                TextBlock nombre = dgvAlumnos.Columns[1].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+
+                //preguntamos si deseea dar de baja
+                MessageBoxResult result = MessageBox.Show("Marcar como Egresado a: " + nombre.Text + "", "Confirmar", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    new cn_alumnos().MarcarEgresado(cuenta.Text);
+                    Listar();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Seleccione un alumno primero");
+            }
+        }
+
+        private void menu_titulado_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //obtenemos los valores las columnas de la fila seleccionada para enviarlas a la ventana de edicion
+                TextBlock cuenta = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+                TextBlock nombre = dgvAlumnos.Columns[1].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+
+                //preguntamos si deseea dar de baja
+                MessageBoxResult result = MessageBox.Show("Marcar como Titulado a: " + nombre.Text + "", "Confirmar", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    new cn_alumnos().Marcartitulado(cuenta.Text);
+                    Listar();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Seleccione un alumno primero");
+            }
+        }
+
+        private void menu_eft_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //obtenemos los valores las columnas de la fila seleccionada para enviarlas a la ventana de edicion
+                TextBlock cuenta = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+                TextBlock nombre = dgvAlumnos.Columns[1].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+
+                //preguntamos si deseea dar de baja
+                MessageBoxResult result = MessageBox.Show("Marcar Eficiencia de Titulación a: " + nombre.Text + "", "Confirmar", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    new cn_alumnos().MarcarEficienciaT(cuenta.Text);
+                    Listar();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Seleccione un alumno primero");
+            }
+        }
+
+        private void MenuItem_Click_4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menu_ss_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //obtenemos los valores las columnas de la fila seleccionada para enviarlas a la ventana de edicion
+                TextBlock cuenta = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+                TextBlock nombre = dgvAlumnos.Columns[1].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+
+                //preguntamos si deseea dar de baja
+                MessageBoxResult result = MessageBox.Show("Marcar Servicio Social a: " + nombre.Text + "", "Confirmar", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    new cn_alumnos().MarcarServicio(cuenta.Text);
+                    Listar();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Seleccione un alumno primero");
+            }
+        }
+
+        private void menu_pract_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //obtenemos los valores las columnas de la fila seleccionada para enviarlas a la ventana de edicion
+                TextBlock cuenta = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+                TextBlock nombre = dgvAlumnos.Columns[1].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+
+                //preguntamos si deseea dar de baja
+                MessageBoxResult result = MessageBox.Show("Marcar Practicas Profesionales a: " + nombre.Text + "", "Confirmar", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    new cn_alumnos().MarcarPracticas(cuenta.Text);
+                    Listar();
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Seleccione un alumno primero");
             }
         }
     }

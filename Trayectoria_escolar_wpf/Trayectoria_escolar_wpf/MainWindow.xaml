@@ -40,8 +40,21 @@
                     <Separator/>
                     <ListBoxItem MouseLeftButtonUp="ListBoxItem_MouseLeftButtonUp_1" >
                         <StackPanel Orientation="Horizontal">
-                            <materialDesign:PackIcon Kind="LaptopWindows" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" Margin="18 0 0 0"/>
-                            <TextBlock Margin="20 0 0 0" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" TextTrimming="CharacterEllipsis" FontSize="18">Calificaciones</TextBlock>
+                            <materialDesign:PackIcon Kind="Note" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" Margin="18 0 0 0"/>
+                            <TextBlock Margin="20 0 0 0" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" TextTrimming="CharacterEllipsis" FontSize="18">Actas Ordinarios</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem MouseLeftButtonUp="ListBoxItem_MouseLeftButtonUp_3" >
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Note" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" Margin="18 0 0 0"/>
+                            <TextBlock Margin="20 0 0 0" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" TextTrimming="CharacterEllipsis" FontSize="18">Actas Extraordinarios</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <Separator/>
+                    <ListBoxItem MouseLeftButtonUp="ListBoxItem_MouseLeftButtonUp_2" >
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Numeric" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" Margin="18 0 0 0"/>
+                            <TextBlock Margin="20 0 0 0" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" TextTrimming="CharacterEllipsis" FontSize="18">Folios Ordinarios</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
                     <Separator/>

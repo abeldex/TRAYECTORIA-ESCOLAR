@@ -1,0 +1,4 @@
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\bin\Release\Entidades.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\bin\Release\Entidades.pdb
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Release\Entidades.dll
+C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Release\Entidades.pdb

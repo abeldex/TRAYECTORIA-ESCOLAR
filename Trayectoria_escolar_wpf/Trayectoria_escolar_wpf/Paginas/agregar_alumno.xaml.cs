@@ -215,6 +215,11 @@ namespace Trayectoria_escolar_wpf.Paginas
                 al.desertor = 0;
                 al.baja = 0;
                 al.rezagado = 0;
+                al.egresado = "No";
+                al.titulado = "No";
+                al.eficiencia_titulacion = "No";
+                al.servicio_social = "No";
+                al.practicas = "No";
                 new cn_alumnos().Insertar(al);
                 MessageBox.Show("Alumno Guardado");
                 this.Close();

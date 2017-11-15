@@ -3,7 +3,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        Title="Agregar alumno" Height="655.5" Width="1274.5" WindowStyle="ToolWindow"  ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner"
+        Title="Agregar alumno" Height="696.604" Width="1274.5" WindowStyle="ToolWindow"  ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterOwner"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
@@ -124,7 +124,7 @@
         <materialDesign:PackIcon Kind="Directions" Height="24" Width="24" Margin="405,457,0,-159" Foreground="Gray" Grid.Column="1" />
         <TextBox TabIndex="26" x:Name="txtTelefonoTutor" HorizontalAlignment="Left" Height="36" materialDesign:HintAssist.Hint="Teléfono Tutor" Margin="722,383,0,-97" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Arial" FontSize="10" FontWeight="Bold" Foreground="Black" Grid.Column="1"/>
         <materialDesign:PackIcon Kind="Phone" Height="24" Width="24" Margin="693,395,0,-97" Foreground="Gray" Grid.Column="1" />
-        <Button TabIndex="27" x:Name="btnGuardar" Content="Guardar Alumno" HorizontalAlignment="Left" Margin="826,560,0,-293" VerticalAlignment="Top" Width="163" Height="55" Click="btnGuardar_Click" Background="#FF3F9C47" BorderBrush="#FF45B450" Grid.Column="1"/>
-        <Button x:Name="BtnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="629,560,0,-294" VerticalAlignment="Top" Width="164" Height="56" Background="#FFDE2121" BorderBrush="#FFB40000" Click="BtnCancelar_Click" Grid.Column="1"/>
+        <Button TabIndex="27" x:Name="btnGuardar" Content="Guardar Alumno" HorizontalAlignment="Left" Margin="826,582,0,-315" VerticalAlignment="Top" Width="163" Height="55" Click="btnGuardar_Click" Background="#FF3F9C47" BorderBrush="#FF45B450" Grid.Column="1"/>
+        <Button x:Name="BtnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="611,582,0,-316" VerticalAlignment="Top" Width="164" Height="56" Background="#FFDE2121" BorderBrush="#FFB40000" Click="BtnCancelar_Click" Grid.Column="1"/>
     </Grid>
 </Window>

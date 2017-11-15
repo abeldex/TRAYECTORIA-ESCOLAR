@@ -40,8 +40,20 @@
     <ApplicationIcon>web_hi_res_512.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dragablz, Version=0.0.3.197, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dragablz.0.0.3.197\lib\net45\Dragablz.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.MahApps, Version=0.0.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.MahApps.0.0.11\lib\net45\MaterialDesignThemes.MahApps.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MaterialDesignThemes.Wpf, Version=2.3.0.823, Culture=neutral, processorArchitecture=MSIL">
@@ -51,6 +63,10 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -62,6 +78,10 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WPFTextBoxAutoComplete, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFTextBoxAutoComplete.1.0.5\lib\net40\WPFTextBoxAutoComplete.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -73,6 +93,15 @@
     </Compile>
     <Compile Include="Paginas\agregar_alumno.xaml.cs">
       <DependentUpon>agregar_alumno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\alumno_estado.xaml.cs">
+      <DependentUpon>alumno_estado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\captura_extraordinarios.xaml.cs">
+      <DependentUpon>captura_extraordinarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\folios_ordinarios.xaml.cs">
+      <DependentUpon>folios_ordinarios.xaml</DependentUpon>
     </Compile>
     <Compile Include="Test.xaml.cs">
       <DependentUpon>Test.xaml</DependentUpon>
@@ -101,6 +130,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Paginas\alumno_estado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Paginas\buscar_alumno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -109,7 +142,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Paginas\captura_extraordinarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Paginas\editar_alumno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paginas\folios_ordinarios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -173,24 +214,27 @@
     <Resource Include="Resources\images\logo uas geodew.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Trayectoria_Calificaciones\DAC\DAC.csproj">
+    <Resource Include="web_hi_res_512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\images\banner_acta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAC\DAC.csproj">
       <Project>{051d49af-2ab3-483e-8f8c-8d82b109be68}</Project>
       <Name>DAC</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Trayectoria_Calificaciones\Entidades\Entidades.csproj">
+    <ProjectReference Include="..\..\Entidades\Entidades.csproj">
       <Project>{ad0c1883-ef63-4937-bcad-0d37e4e31997}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Trayectoria_Calificaciones\Negocio\Negocio.csproj">
+    <ProjectReference Include="..\..\Negocio\Negocio.csproj">
       <Project>{d5e7ff4e-ed0b-479a-91b7-004e95f51b26}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="web_hi_res_512.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\images\banner_acta.png" />
+    <Resource Include="Resources\images\cabecera_extras.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,42 @@
+﻿<Page x:Class="Trayectoria_escolar_wpf.Paginas.folios_ordinarios"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Trayectoria_escolar_wpf.Paginas"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Title="Folios Ordinarios">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.DataGrid.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Card.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Flipper.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Popupbox.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid>
+        <ComboBox x:Name="cmbCohorte" materialDesign:HintAssist.Hint="Cohorte" Height="35" Width="150" TextOptions.TextHintingMode="Animated" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,170,0" FontWeight="Bold" FontFamily="Arial Black">
+            <ComboBoxItem Content="2017-2022" Tag="2017-2022"/>
+            <ComboBoxItem Content="2016-2021" Tag="2016-2021"/>
+            <ComboBoxItem Content="2015-2020" Tag="2015-2020"/>
+            <ComboBoxItem Content="2014-2019" Tag="2014-2019"/>
+            <ComboBoxItem Content="2013-2018" Tag="2013-2018"/>
+            <ComboBoxItem Content="2012-2017" Tag="2012-2017"/>
+        </ComboBox>
+        <Button x:Name="btn_filtrar" Style="{StaticResource MaterialDesignFloatingActionButton}"
+                        Margin="192,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"
+                        ToolTip="Filtrar" Height="36" Width="36" Background="orange"  BorderBrush="{x:Null}" Click="btn_filtrar_Click">
+            <materialDesign:PackIcon Kind="Sort" Height="24" Width="24"/>
+        </Button>
+        <DataGrid x:Name="dgvFolios" Height="600" IsReadOnly="True" AutoGenerateColumns="True" Background="White" BorderBrush="#89C1C1C1" Margin="0,41,0,0">
+            
+        </DataGrid>
+
+    </Grid>
+</Page>
