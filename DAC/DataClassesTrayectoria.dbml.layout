@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.25" name="DataClassesTrayectoria">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.25, 13.375" name="DataClassesTrayectoria">
   <DataContextMoniker Name="/DataClassesTrayectoriaDataContext" />
   <nestedChildShapes>
     <classShape Id="1c3891a6-605e-4fb1-bd03-0d4cbbc5099e" absoluteBounds="0.625, 0.875, 2, 1.7708968098958331">
@@ -78,6 +78,90 @@
       <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/cal_extras" />
       <nestedChildShapes>
         <elementListCompartment Id="37e8a555-b50f-4fe1-8b5a-ed639047f188" absoluteBounds="3.14, 8.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ecd33c4-0196-43bf-b0e4-afc77bcd3bf4" absoluteBounds="10.75, 1, 2.25, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoGrupoSexo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f3079dd-7ab6-4815-b9f4-fb792fe1d790" absoluteBounds="10.765, 1.46, 2.2199999999999998, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dad18883-4b2a-461e-a575-4959ca7a9458" absoluteBounds="10.75, 2.375, 2.25, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoEdadGrupo1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8a22a55-6449-4351-bb93-b99ee7e81c76" absoluteBounds="10.765, 2.835, 2.2199999999999998, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5da6aa36-adad-45de-a1e8-0f763a6ba054" absoluteBounds="10.75, 3.625, 2.25, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoEdadGrupo2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38372696-493a-41ff-b8c8-51c8f6240d42" absoluteBounds="10.765, 4.085, 2.2199999999999998, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e7a93ce-9366-49f3-b243-fb6286c57f18" absoluteBounds="10.75, 5, 2.25, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoEdadGrupo3" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e71190cc-6c19-44c2-8d86-e9bd894dde9f" absoluteBounds="10.765, 5.46, 2.2199999999999998, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a9ab575-dd6a-4bca-8543-497fefb1540d" absoluteBounds="10.75, 10.125, 2.25, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoInstitucionEducativa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b97d999e-d0e8-4907-85cf-ad8c1b911d3b" absoluteBounds="10.765, 10.585, 2.2199999999999998, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a60f81c5-177b-4c72-a306-68affc7d02dd" absoluteBounds="10.75, 6.375, 2.25, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoLugarProcedenciaGrupo1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c350f342-fc9d-4150-bce9-da46f7bbe236" absoluteBounds="10.765, 6.835, 2.2199999999999998, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c6f2fc2-33d6-41b7-8ec6-c9c1db29c959" absoluteBounds="10.75, 7.625, 2.25, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoLugarProcedenciaGrupo2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="20143100-67e4-4169-b04e-edc1aa2faa2a" absoluteBounds="10.765, 8.085, 2.2199999999999998, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7be8d164-70c2-4243-883a-50cf3cebb0a4" absoluteBounds="10.75, 8.875, 2.25, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoLugarProcedenciaGrupo3" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ace09c82-9680-4b84-9420-3621d21e266b" absoluteBounds="10.765, 9.335, 2.2199999999999998, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28babf1e-c874-449f-b203-060c30e39f90" absoluteBounds="0.75, 10.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoPromedioGrupo1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0583ffe8-47cb-43be-b2bb-0687e42aadc9" absoluteBounds="0.76500000000000012, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96c76e6e-59d7-40f3-a030-6b6907f73908" absoluteBounds="2.875, 10.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoPromedioGrupo2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11f9f4a1-c118-4e5d-9928-c82ace2e0173" absoluteBounds="2.89, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="044674d1-cc25-457a-ad9b-bb2e8f1e7014" absoluteBounds="5, 10.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoPromedioGrupo3" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c3447085-c991-43f9-8f0b-6ffcaf0d642a" absoluteBounds="5.015, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="37362bff-d8ac-4407-ae07-4edee966db40" absoluteBounds="0.75, 11.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoCenevalGrupo1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6e915295-6010-4802-ac40-1b16fc27426f" absoluteBounds="0.76500000000000012, 12.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3193270-504e-4359-a4fb-3b2a1db10662" absoluteBounds="2.875, 11.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoCenevalGrupo2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d14006e2-cea0-4bb8-a3e0-0232418cea1f" absoluteBounds="2.89, 12.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9c9727f5-e8e7-4617-948b-f6fbc5ef26c7" absoluteBounds="5, 11.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoCenevalGrupo3" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a145345-1a96-4913-8b72-b04aa7707a82" absoluteBounds="5.015, 12.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

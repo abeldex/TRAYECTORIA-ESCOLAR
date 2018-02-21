@@ -48,5 +48,11 @@ namespace Trayectoria_escolar_wpf
             Paginas.captura_extraordinarios extras = new Paginas.captura_extraordinarios();
             extras.Show();
         }
+
+        private void ListBoxItem_MouseLeftButtonUp_4(object sender, MouseButtonEventArgs e)
+        {
+            Reportes.Reportes r = new Reportes.Reportes();
+            r.Show();
+        }
     }
 }

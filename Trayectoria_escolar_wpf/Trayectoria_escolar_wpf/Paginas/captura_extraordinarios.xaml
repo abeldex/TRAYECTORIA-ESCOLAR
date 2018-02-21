@@ -43,6 +43,10 @@
     
     <ScrollViewer CanContentScroll="True">
         <StackPanel x:Name="panel_principal">
+           
+            
+            
+            
             <Grid VerticalAlignment="Top" Margin="0,0,0,0">
         <Image x:Name="image" Source="../Resources/images/cabecera_extras.png" Stretch="Fill" HorizontalAlignment="Left" Height="206" Margin="0,44,-124,0" VerticalAlignment="Top" Width="1186"/>
 
@@ -91,7 +95,7 @@
                             <materialDesign:PackIcon Kind="Pencil" Height="16" Width="16"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <Separator></Separator>
+                    <Separator/>
                     <MenuItem Header="Estado" Click="MenuItem_Click_1" >
                         <MenuItem.Icon>
                             <materialDesign:PackIcon Kind="AccountAlert" Height="16" Width="16"/>
@@ -105,7 +109,7 @@
                 <DataGridTextColumn Header="N O M B R E  D E L  A L U M N O" Binding="{Binding nombre}"  Width="460"/>
                 <DataGridTextColumn Header="CALIFICACION" IsReadOnly="True" Width="150" FontWeight="Bold" FontSize="14"> 
                     <DataGridTextColumn.ElementStyle>
-                    <Style TargetType="TextBlock">
+                    <Style TargetType="{x:Type TextBlock}">
                         <Setter Property="HorizontalAlignment" Value="Center" />
                     </Style>
                 </DataGridTextColumn.ElementStyle>
@@ -113,22 +117,22 @@
                 <DataGridTextColumn Header="CAL_LETRA" IsReadOnly="True" Width="100"/>
                 <DataGridTextColumn Header="AGREGAR" IsReadOnly="False" Width="80">
                     <DataGridTextColumn.ElementStyle>
-                    <Style TargetType="TextBlock">
+                    <Style TargetType="{x:Type TextBlock}">
                         <Setter Property="HorizontalAlignment" Value="Center" />
-                        <Setter Property="Background" Value="White"></Setter>
+                        <Setter Property="Background" Value="White"/>
                     </Style>
                 </DataGridTextColumn.ElementStyle>
                </DataGridTextColumn>
                 <DataGridTextColumn Header="Turno" Foreground="Gray" Binding="{Binding cohorte}" IsReadOnly="True" Width="170" />
         	</DataGrid.Columns>
             <DataGrid.RowStyle>
-            <Style TargetType="DataGridRow"> 
+            <Style TargetType="{x:Type DataGridRow}"> 
                 <Style.Triggers>
                     <DataTrigger Binding="{Binding baja}" Value="True">
-                        <Setter Property="Foreground" Value="Red"></Setter>
+                        <Setter Property="Foreground" Value="Red"/>
                     </DataTrigger>
                     <DataTrigger Binding="{Binding desertor}" Value="True">
-                        <Setter Property="Foreground" Value="Purple"></Setter>
+                        <Setter Property="Foreground" Value="Purple"/>
                     </DataTrigger>
                 </Style.Triggers>
             </Style>
@@ -146,6 +150,7 @@
             ToolTip="Revisar" Height="48" Width="48" RenderTransformOrigin="0.444,2.25" Click="Button_Click">
             <materialDesign:PackIcon Kind="AccountAlert" Height="24" Width="24" />
         </Button>
+        <CheckBox x:Name="chk_regularizacion" Content="REGULARIZACIÓN" HorizontalAlignment="Left" Margin="630,170,0,0" VerticalAlignment="Top" Width="202" FontFamily="Arial" FontSize="20" FontWeight="Bold"/>
                 
             </Grid>
            

@@ -28,7 +28,7 @@
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
                                     IsChecked="{Binding ElementName=MenuToggleButton, Path=IsChecked, Mode=TwoWay}" />-->
-                <Image Source="Resources/images/logogeode2p.png" Stretch="Fill" Width="200" Height="48" Margin="0 10 0 0" DockPanel.Dock="Top" HorizontalAlignment="Center" />
+                <Image Source="Resources/images/logogeode.png" Stretch="Uniform" Width="200" Height="48" Margin="0 10 0 0" DockPanel.Dock="Top" HorizontalAlignment="Center" />
 
                 <ListBox x:Name="MenuListBox" Margin="0 16 0 16" SelectedIndex="0" Background="#FF454C74">
                     <ListBoxItem MouseLeftButtonUp="ListBoxItem_MouseLeftButtonUp">
@@ -58,7 +58,7 @@
                         </StackPanel>
                     </ListBoxItem>
                     <Separator/>
-                    <ListBoxItem>
+                    <ListBoxItem MouseLeftButtonUp="ListBoxItem_MouseLeftButtonUp_4" >
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Printer" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" Margin="18 0 0 0"/>
                             <TextBlock Margin="20 0 0 0" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" TextTrimming="CharacterEllipsis" FontSize="18">Reportes</TextBlock>
@@ -83,14 +83,14 @@
                             <Button Content="Salir"/>
                         </StackPanel>
                     </materialDesign:PopupBox>
-                    <Image Source="Resources/images/trayectoria.png" Stretch="Uniform" Width="1024" Height="45" VerticalAlignment="Center" />
+                    <Image Source="Resources/images/banner sistema trayectoria.png" Stretch="Uniform" Width="1024" Height="45" VerticalAlignment="Center" />
                     
                 </DockPanel>
             </materialDesign:ColorZone>
             <!-- /header -->
             <Grid>
                 <Grid.Background>
-                    <ImageBrush ImageSource="http://geodesia.uas.edu.mx/img/computoapp.jpg" TileMode="Tile" Stretch="UniformToFill"  />
+                    <ImageBrush ImageSource="http://geodesia.uas.edu.mx/images/cabecera22.png" TileMode="Tile" Stretch="UniformToFill"  />
                 </Grid.Background>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />

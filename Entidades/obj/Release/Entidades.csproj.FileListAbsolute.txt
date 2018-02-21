@@ -2,3 +2,8 @@ C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\E
 C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\bin\Release\Entidades.pdb
 C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Release\Entidades.dll
 C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Entidades\obj\Release\Entidades.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\bin\Release\Entidades.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\bin\Release\Entidades.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Release\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Release\Entidades.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Release\Entidades.pdb

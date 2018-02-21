@@ -13,3 +13,14 @@ C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Enti
 C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.dll
 C:\Users\ComputoAdmin\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\bin\Debug\Entidades.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\bin\Debug\Entidades.dll
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\bin\Debug\Entidades.pdb
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.dll
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Entidades\obj\Debug\Entidades.pdb

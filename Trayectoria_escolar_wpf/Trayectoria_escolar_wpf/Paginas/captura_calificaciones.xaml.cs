@@ -126,8 +126,14 @@ namespace Trayectoria_escolar_wpf.Paginas
         {
             try
             {
+                //verificamos que tipo de acta se va guardar
+                string tipo_acta = "";
+                if (chk_complementaria.IsChecked == true)
+                    tipo_acta = "CO";
+                else
+                    tipo_acta = "OR";
                 //llenamos la clase folio_ordinarios que se va insertar 
-                e_folios_ordinarios f = new e_folios_ordinarios("OR");
+                e_folios_ordinarios f = new e_folios_ordinarios(tipo_acta);
                 f.folio = int.Parse(txt_folio.Text);
                 f.cohorte = txt_cohorte.Text;
                 f.periodo = int.Parse(txt_periodo.Text);

@@ -44,11 +44,11 @@
             </DockPanel>
         </materialDesign:ColorZone>
          <!--botones -->
-            <Button Style="{StaticResource MaterialDesignFloatingActionButton}"
+    <Button Style="{StaticResource MaterialDesignFloatingActionButton}"
                                 Margin="0,70,10,0" HorizontalAlignment="Right" VerticalAlignment="Top"
                                 ToolTip="Mostrar Alumnos" Height="48" Width="48" RenderTransformOrigin="0.444,2.25" Click="Button_Click_1">
-                <materialDesign:PackIcon Kind="ViewList" Height="24" Width="24" />
-            </Button>
+        <materialDesign:PackIcon Kind="ViewList" Height="24" Width="24" />
+    </Button>
     <!---->
         <ComboBox x:Name="combo_carrera" HorizontalAlignment="Left" Margin="221,226,0,-88" VerticalAlignment="Top" Width="403" Height="28" FontFamily="Arial" FontSize="15" FontWeight="Bold" Foreground="Black" TextOptions.TextFormattingMode="Display" Background="White" Cursor="Hand" SelectionChanged="combo_carrera_SelectionChanged">
             <ComboBoxItem Content="CIENCIAS DE LA TIERRA T.C." Tag="0"/>
@@ -135,6 +135,7 @@
             ToolTip="Revisar" Height="48" Width="48" RenderTransformOrigin="0.444,2.25" Click="Button_Click">
             <materialDesign:PackIcon Kind="AccountAlert" Height="24" Width="24" />
         </Button>
+        <CheckBox x:Name="chk_complementaria" Content="COMPLEMENTARIA" HorizontalAlignment="Left" Margin="611,165,0,0" VerticalAlignment="Top" Width="215" FontFamily="Arial" FontWeight="Bold" FontSize="20" Foreground="Black"/>
             </Grid>
             
             

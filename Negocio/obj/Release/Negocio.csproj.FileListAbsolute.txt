@@ -7,3 +7,14 @@ C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\N
 C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
 C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Negocio\obj\Release\Negocio.dll
 C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\Negocio\obj\Release\Negocio.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Release\Negocio.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Release\Negocio.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Release\DAC.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Release\Entidades.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Release\DAC.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Release\DAC.dll.config
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Release\Entidades.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Release\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Release\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Release\Negocio.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Release\Negocio.pdb

@@ -35,7 +35,7 @@ namespace Negocio
                 using (this.contexto = new DataClassesTrayectoriaDataContext())
                 {
                     var t = from fr in this.contexto.ReprobadosFoliosOrdinarios
-                            where fr.periodo.Equals(periodo) && fr.grupo.Equals(grupo) && fr.materia.Equals(materia)
+                            where fr.periodo.Equals(periodo) && fr.materia.Equals(materia)
                             orderby fr.nombre
                             select fr;
                     return t.ToList();

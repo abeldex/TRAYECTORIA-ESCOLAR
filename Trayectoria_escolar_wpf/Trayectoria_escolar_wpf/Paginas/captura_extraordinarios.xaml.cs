@@ -115,8 +115,14 @@ namespace Trayectoria_escolar_wpf.Paginas
         {
             try
             {
+                string tipo_acta = "";
+                if (chk_regularizacion.IsChecked == true)
+                    tipo_acta = "RE";
+                else
+                    tipo_acta = "EX";
+
                 //llenamos la clase folio_ordinarios que se va insertar 
-                e_folios_extraordinarios f = new e_folios_extraordinarios("EX");
+                e_folios_extraordinarios f = new e_folios_extraordinarios(tipo_acta);
                 f.folio = int.Parse(txt_folio.Text);
                 f.cohorte = txt_cohorte.Text;
                 f.periodo = int.Parse(txt_periodo.Text);

@@ -49,6 +49,7 @@
     <Compile Include="cn_municipio.cs" />
     <Compile Include="cn_preparatorias.cs" />
     <Compile Include="cn_profesores.cs" />
+    <Compile Include="cn_reportes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

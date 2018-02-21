@@ -6,3 +6,12 @@ C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\D
 C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Release\DAC.csprojResolveAssemblyReference.cache
 C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Release\DAC.dll
 C:\Users\LaMasPerrona\Documents\TRAYECTORIA ESCOLAR\Trayectoria_Calificaciones\DAC\obj\Release\DAC.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\bin\Release\DAC.dll.config
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\bin\Release\DAC.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\bin\Release\DAC.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\bin\Release\Entidades.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\bin\Release\Entidades.pdb
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Release\DAC.csprojResolveAssemblyReference.cache
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Release\DAC.csproj.CoreCompileInputs.cache
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Release\DAC.dll
+C:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Release\DAC.pdb

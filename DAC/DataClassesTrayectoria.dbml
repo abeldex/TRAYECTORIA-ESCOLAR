@@ -165,6 +165,90 @@
       <Column Name="calificacion" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
+  <Table Name="dbo.IngresoGrupoSexo" Member="IngresoGrupoSexo">
+    <Type Name="IngresoGrupoSexo">
+      <Column Name="CATEGORIA" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="CANTIDAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoEdadGrupo1" Member="IngresoEdadGrupo1">
+    <Type Name="IngresoEdadGrupo1">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="edad_rango" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoEdadGrupo2" Member="IngresoEdadGrupo2">
+    <Type Name="IngresoEdadGrupo2">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="edad_rango" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoEdadGrupo3" Member="IngresoEdadGrupo3">
+    <Type Name="IngresoEdadGrupo3">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="edad_rango" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoInstitucionEducativa" Member="IngresoInstitucionEducativa">
+    <Type Name="IngresoInstitucionEducativa">
+      <Column Name="NombrePreparatoria" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoLugarProcedenciaGrupo1" Member="IngresoLugarProcedenciaGrupo1">
+    <Type Name="IngresoLugarProcedenciaGrupo1">
+      <Column Name="nombre" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoLugarProcedenciaGrupo2" Member="IngresoLugarProcedenciaGrupo2">
+    <Type Name="IngresoLugarProcedenciaGrupo2">
+      <Column Name="nombre" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoLugarProcedenciaGrupo3" Member="IngresoLugarProcedenciaGrupo3">
+    <Type Name="IngresoLugarProcedenciaGrupo3">
+      <Column Name="nombre" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoPromedioGrupo1" Member="IngresoPromedioGrupo1">
+    <Type Name="IngresoPromedioGrupo1">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="promedio" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoPromedioGrupo2" Member="IngresoPromedioGrupo2">
+    <Type Name="IngresoPromedioGrupo2">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="promedio" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoPromedioGrupo3" Member="IngresoPromedioGrupo3">
+    <Type Name="IngresoPromedioGrupo3">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="promedio" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoCenevalGrupo1" Member="IngresoCenevalGrupo1">
+    <Type Name="IngresoCenevalGrupo1">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PromedioCeneval" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoCenevalGrupo2" Member="IngresoCenevalGrupo2">
+    <Type Name="IngresoCenevalGrupo2">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PromedioCeneval" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngresoCenevalGrupo3" Member="IngresoCenevalGrupo3">
+    <Type Name="IngresoCenevalGrupo3">
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PromedioCeneval" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Function Name="dbo.ins_calificacion" Method="ins_calificacion">
     <Parameter Name="folio" Type="System.Int32" DbType="Int" />
     <Parameter Name="cuenta" Type="System.String" DbType="VarChar(9)" />
