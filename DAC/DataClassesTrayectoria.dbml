@@ -249,6 +249,36 @@
       <Column Name="PromedioCeneval" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.IngresoCarrera" Member="IngresoCarrera">
+    <Type Name="IngresoCarrera">
+      <Column Name="CARRERA" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="CANTIDAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DesercionGrupoCohorte" Member="DesercionGrupoCohorte">
+    <Type Name="DesercionGrupoCohorte">
+      <Column Name="[Cohorte y Grupo]" Member="Cohorte_y_Grupo" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DesercionGrupoSexo" Member="DesercionGrupoSexo">
+    <Type Name="DesercionGrupoSexo">
+      <Column Name="[Sexo y Grupo]" Member="Sexo_y_Grupo" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RezagadosGrupoCohorte" Member="RezagadosGrupoCohorte">
+    <Type Name="RezagadosGrupoCohorte">
+      <Column Name="[Cohorte y Grupo]" Member="Cohorte_y_Grupo" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RezagadosGrupoSexo" Member="RezagadosGrupoSexo">
+    <Type Name="RezagadosGrupoSexo">
+      <Column Name="[Sexo y Grupo]" Member="Sexo_y_Grupo" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
   <Function Name="dbo.ins_calificacion" Method="ins_calificacion">
     <Parameter Name="folio" Type="System.Int32" DbType="Int" />
     <Parameter Name="cuenta" Type="System.String" DbType="VarChar(9)" />

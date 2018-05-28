@@ -54,5 +54,11 @@ namespace Trayectoria_escolar_wpf
             Reportes.Reportes r = new Reportes.Reportes();
             r.Show();
         }
+
+        private void ListBoxItem_MouseLeftButtonUp_5(object sender, MouseButtonEventArgs e)
+        {
+            Reportes.ReporteDesercionRezago rdr = new Reportes.ReporteDesercionRezago();
+            rdr.Show();
+        }
     }
 }

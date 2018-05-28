@@ -58,10 +58,28 @@
                         </StackPanel>
                     </ListBoxItem>
                     <Separator/>
-                    <ListBoxItem MouseLeftButtonUp="ListBoxItem_MouseLeftButtonUp_4" >
+                    <ListBoxItem  >
                         <StackPanel Orientation="Horizontal">
                             <materialDesign:PackIcon Kind="Printer" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" Margin="18 0 0 0"/>
                             <TextBlock Margin="20 0 0 0" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" TextTrimming="CharacterEllipsis" FontSize="18">Reportes</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem MouseLeftButtonUp="ListBoxItem_MouseLeftButtonUp_4">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="DotsHorizontal" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" Margin="18 0 0 0"/>
+                            <TextBlock Margin="30 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" TextTrimming="CharacterEllipsis" FontSize="14" FontStyle="Italic">Indices de Ingreso</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem MouseLeftButtonUp="ListBoxItem_MouseLeftButtonUp_5" >
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="DotsHorizontal" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" Margin="18 0 0 0"/>
+                            <TextBlock Margin="30 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" TextTrimming="CharacterEllipsis" FontSize="14" FontStyle="Italic">Deserción y Rezago</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="DotsHorizontal" Width="32" Height="32" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" Margin="18 0 0 0"/>
+                            <TextBlock Margin="30 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#DDFFFFFF" TextTrimming="CharacterEllipsis" FontSize="14" FontStyle="Italic">Indices de Reprobación</TextBlock>
                         </StackPanel>
                     </ListBoxItem>
                 </ListBox>

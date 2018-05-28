@@ -27,6 +27,147 @@ namespace Negocio
                 throw new Exception("Error al Listar\n " + ex.Message);
             }
         }
+        public List<RezagadosGrupoSexo> GetRezagadoGrupoSexo()
+        {
+            try
+            {
+                using (this.contexto = new DataClassesTrayectoriaDataContext())
+                {
+                    var t = from m in this.contexto.RezagadosGrupoSexo
+                            select m;
+                    return t.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al Listar\n " + ex.Message);
+            }
+        }
+        public List<RezagadosGrupoCohorte> GetRezagadoGrupoCohorte()
+        {
+            try
+            {
+                using (this.contexto = new DataClassesTrayectoriaDataContext())
+                {
+                    var t = from m in this.contexto.RezagadosGrupoCohorte
+                            select m;
+                    return t.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al Listar\n " + ex.Message);
+            }
+        }
+        public List<DesercionGrupoSexo> GetDesercionGrupoSexo()
+        {
+            try
+            {
+                using (this.contexto = new DataClassesTrayectoriaDataContext())
+                {
+                    var t = from m in this.contexto.DesercionGrupoSexo
+                            select m;
+                    return t.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al Listar\n " + ex.Message);
+            }
+        }
+
+        public List<DesercionGrupoCohorte> GetDesercionCohorte()
+        {
+            try
+            {
+                using (this.contexto = new DataClassesTrayectoriaDataContext())
+                {
+                    var t = from m in this.contexto.DesercionGrupoCohorte
+                            select m;
+                    return t.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al Listar\n " + ex.Message);
+            }
+        }
+
+        public List<IngresoCarrera> GetIngresoCarreras()
+        {
+            try
+            {
+                using (this.contexto = new DataClassesTrayectoriaDataContext())
+                {
+                    var t = from m in this.contexto.IngresoCarrera
+                            select m;
+                    return t.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al Listar\n " + ex.Message);
+            }
+        }
+
+        public List<IngresoCenevalGrupo1> GetIngresoCenevalGpo1()
+        {
+            try
+            {
+                using (this.contexto = new DataClassesTrayectoriaDataContext())
+                {
+                    var t = from m in this.contexto.IngresoCenevalGrupo1
+                            select m;
+                    return t.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al Listar\n " + ex.Message);
+            }
+        }
+
+        public List<IngresoCenevalGrupo2> GetIngresoCenevalGpo2()
+        {
+            try
+            {
+                using (this.contexto = new DataClassesTrayectoriaDataContext())
+                {
+                    var t = from m in this.contexto.IngresoCenevalGrupo2
+                            select m;
+                    return t.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al Listar\n " + ex.Message);
+            }
+        }
+
+        public List<IngresoCenevalGrupo3> GetIngresoCenevalGpo3()
+        {
+            try
+            {
+                using (this.contexto = new DataClassesTrayectoriaDataContext())
+                {
+                    var t = from m in this.contexto.IngresoCenevalGrupo3
+                            select m;
+                    return t.ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al Listar\n " + ex.Message);
+            }
+        }
 
         public List<IngresoPromedioGrupo1> GetIngresoPromedioGpo1()
         {

@@ -308,6 +308,46 @@ namespace DAC
 			}
 		}
 		
+		public System.Data.Linq.Table<IngresoCarrera> IngresoCarrera
+		{
+			get
+			{
+				return this.GetTable<IngresoCarrera>();
+			}
+		}
+		
+		public System.Data.Linq.Table<DesercionGrupoCohorte> DesercionGrupoCohorte
+		{
+			get
+			{
+				return this.GetTable<DesercionGrupoCohorte>();
+			}
+		}
+		
+		public System.Data.Linq.Table<DesercionGrupoSexo> DesercionGrupoSexo
+		{
+			get
+			{
+				return this.GetTable<DesercionGrupoSexo>();
+			}
+		}
+		
+		public System.Data.Linq.Table<RezagadosGrupoCohorte> RezagadosGrupoCohorte
+		{
+			get
+			{
+				return this.GetTable<RezagadosGrupoCohorte>();
+			}
+		}
+		
+		public System.Data.Linq.Table<RezagadosGrupoSexo> RezagadosGrupoSexo
+		{
+			get
+			{
+				return this.GetTable<RezagadosGrupoSexo>();
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ins_calificacion")]
 		public int ins_calificacion([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> folio, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(9)")] string cuenta, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Float")] System.Nullable<double> calificacion)
 		{
@@ -4033,6 +4073,231 @@ namespace DAC
 				if ((this._PromedioCeneval != value))
 				{
 					this._PromedioCeneval = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.IngresoCarrera")]
+	public partial class IngresoCarrera
+	{
+		
+		private string _CARRERA;
+		
+		private System.Nullable<int> _CANTIDAD;
+		
+		public IngresoCarrera()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CARRERA", DbType="VarChar(18) NOT NULL", CanBeNull=false)]
+		public string CARRERA
+		{
+			get
+			{
+				return this._CARRERA;
+			}
+			set
+			{
+				if ((this._CARRERA != value))
+				{
+					this._CARRERA = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CANTIDAD", DbType="Int")]
+		public System.Nullable<int> CANTIDAD
+		{
+			get
+			{
+				return this._CANTIDAD;
+			}
+			set
+			{
+				if ((this._CANTIDAD != value))
+				{
+					this._CANTIDAD = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DesercionGrupoCohorte")]
+	public partial class DesercionGrupoCohorte
+	{
+		
+		private string _Cohorte_y_Grupo;
+		
+		private System.Nullable<int> _Cantidad;
+		
+		public DesercionGrupoCohorte()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Cohorte y Grupo]", Storage="_Cohorte_y_Grupo", DbType="VarChar(13) NOT NULL", CanBeNull=false)]
+		public string Cohorte_y_Grupo
+		{
+			get
+			{
+				return this._Cohorte_y_Grupo;
+			}
+			set
+			{
+				if ((this._Cohorte_y_Grupo != value))
+				{
+					this._Cohorte_y_Grupo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Int")]
+		public System.Nullable<int> Cantidad
+		{
+			get
+			{
+				return this._Cantidad;
+			}
+			set
+			{
+				if ((this._Cantidad != value))
+				{
+					this._Cantidad = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DesercionGrupoSexo")]
+	public partial class DesercionGrupoSexo
+	{
+		
+		private string _Sexo_y_Grupo;
+		
+		private System.Nullable<int> _Cantidad;
+		
+		public DesercionGrupoSexo()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Sexo y Grupo]", Storage="_Sexo_y_Grupo", DbType="VarChar(11) NOT NULL", CanBeNull=false)]
+		public string Sexo_y_Grupo
+		{
+			get
+			{
+				return this._Sexo_y_Grupo;
+			}
+			set
+			{
+				if ((this._Sexo_y_Grupo != value))
+				{
+					this._Sexo_y_Grupo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Int")]
+		public System.Nullable<int> Cantidad
+		{
+			get
+			{
+				return this._Cantidad;
+			}
+			set
+			{
+				if ((this._Cantidad != value))
+				{
+					this._Cantidad = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.RezagadosGrupoCohorte")]
+	public partial class RezagadosGrupoCohorte
+	{
+		
+		private string _Cohorte_y_Grupo;
+		
+		private System.Nullable<int> _Cantidad;
+		
+		public RezagadosGrupoCohorte()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Cohorte y Grupo]", Storage="_Cohorte_y_Grupo", DbType="VarChar(13) NOT NULL", CanBeNull=false)]
+		public string Cohorte_y_Grupo
+		{
+			get
+			{
+				return this._Cohorte_y_Grupo;
+			}
+			set
+			{
+				if ((this._Cohorte_y_Grupo != value))
+				{
+					this._Cohorte_y_Grupo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Int")]
+		public System.Nullable<int> Cantidad
+		{
+			get
+			{
+				return this._Cantidad;
+			}
+			set
+			{
+				if ((this._Cantidad != value))
+				{
+					this._Cantidad = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.RezagadosGrupoSexo")]
+	public partial class RezagadosGrupoSexo
+	{
+		
+		private string _Sexo_y_Grupo;
+		
+		private System.Nullable<int> _Cantidad;
+		
+		public RezagadosGrupoSexo()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="[Sexo y Grupo]", Storage="_Sexo_y_Grupo", DbType="VarChar(11) NOT NULL", CanBeNull=false)]
+		public string Sexo_y_Grupo
+		{
+			get
+			{
+				return this._Sexo_y_Grupo;
+			}
+			set
+			{
+				if ((this._Sexo_y_Grupo != value))
+				{
+					this._Sexo_y_Grupo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cantidad", DbType="Int")]
+		public System.Nullable<int> Cantidad
+		{
+			get
+			{
+				return this._Cantidad;
+			}
+			set
+			{
+				if ((this._Cantidad != value))
+				{
+					this._Cantidad = value;
 				}
 			}
 		}

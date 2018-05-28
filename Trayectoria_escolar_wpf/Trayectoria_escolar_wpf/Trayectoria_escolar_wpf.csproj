@@ -148,6 +148,9 @@
     <Compile Include="Paginas\folios_ordinarios.xaml.cs">
       <DependentUpon>folios_ordinarios.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReporteDesercionRezago.xaml.cs">
+      <DependentUpon>ReporteDesercionRezago.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\Reportes.xaml.cs">
       <DependentUpon>Reportes.xaml</DependentUpon>
     </Compile>
@@ -199,6 +202,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Paginas\folios_ordinarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Reportes\ReporteDesercionRezago.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

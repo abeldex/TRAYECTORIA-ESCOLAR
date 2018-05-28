@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.25, 13.375" name="DataClassesTrayectoria">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.25, 15.125" name="DataClassesTrayectoria">
   <DataContextMoniker Name="/DataClassesTrayectoriaDataContext" />
   <nestedChildShapes>
     <classShape Id="1c3891a6-605e-4fb1-bd03-0d4cbbc5099e" absoluteBounds="0.625, 0.875, 2, 1.7708968098958331">
@@ -158,10 +158,40 @@
         <elementListCompartment Id="d14006e2-cea0-4bb8-a3e0-0232418cea1f" absoluteBounds="2.89, 12.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="9c9727f5-e8e7-4617-948b-f6fbc5ef26c7" absoluteBounds="5, 11.875, 2, 1.1939925130208333">
+    <classShape Id="b17039b1-fafa-45ed-a558-761633e4432e" absoluteBounds="5, 11.875, 2, 1.1939925130208333">
       <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoCenevalGrupo3" />
       <nestedChildShapes>
-        <elementListCompartment Id="3a145345-1a96-4913-8b72-b04aa7707a82" absoluteBounds="5.015, 12.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="36642e7b-388e-4056-b0e0-236df1e48c83" absoluteBounds="5.015, 12.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97c02472-8d9c-4ed9-bc24-736ab6cc19c9" absoluteBounds="7.25, 10.375, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/IngresoCarrera" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbb196f0-2bac-427d-9cb4-809f4ed398fb" absoluteBounds="7.2650000000000006, 10.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6bb48ea8-d386-438d-a8d7-d1f0d2006768" absoluteBounds="0.75, 13.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/DesercionGrupoCohorte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0506528-b21f-4ca4-865a-6595f5e24058" absoluteBounds="0.76500000000000012, 14.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66f16339-05e1-41dd-a669-64621c291729" absoluteBounds="2.875, 13.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/DesercionGrupoSexo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff072c75-e59f-4693-a35c-9c9fe08554ac" absoluteBounds="2.89, 14.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a6cd49a-eba7-46b4-b9bc-db72e5c1f038" absoluteBounds="5, 13.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/RezagadosGrupoCohorte" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3e9a172-a443-4156-a7c2-7c8600f79092" absoluteBounds="5.015, 14.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5f4460c-a3f9-4956-93b1-830bc1b45221" absoluteBounds="7.125, 13.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DataClassesTrayectoriaDataContext/RezagadosGrupoSexo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48a41d9b-4971-4b60-b813-f3c1f46d0a47" absoluteBounds="7.14, 14.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

@@ -9,6 +9,8 @@ using DAC;
 using System.ComponentModel;
 using System.Windows.Controls;
 using System.Windows.Documents;
+using System.Linq;
+using System.Data;
 
 namespace Trayectoria_escolar_wpf.Reportes
 {
@@ -22,8 +24,17 @@ namespace Trayectoria_escolar_wpf.Reportes
         public string[] Labels { get; set; }
         public Func<double, string> Formatter { get; set; }
         /// <summary>
-        /// Metodos para cargar las Gráficas
+        /// Metodos para cargar las Gráficas de las edades
         /// </summary>
+        /// .
+        public SeriesCollection SeriesCollectionEdades { get; set; }
+        public string[] LabelsEdades { get; set; }
+        public Func<double, string> FormatterEdades { get; set; }
+
+        public SeriesCollection SeriesCollectionProcedencia { get; set; }
+        public string[] LabelsProcedencia { get; set; }
+        public Func<double, string> FormatterProcedencia { get; set; }
+
         public Reportes()
         {
             InitializeComponent();
@@ -32,8 +43,35 @@ namespace Trayectoria_escolar_wpf.Reportes
             ListarIngresoLugarProcedencia();
             ListarIngresoInstitucionEducativa();
             ListarIngresoPromedioGrupo();
+            ListarIngresoCenevalGrupo();
+            ListarIngresoCarreras();
         }
 
+        public void ListarIngresoCarreras()
+        {
+            try
+            {
+                DataGrid15.ItemsSource = new cn_reportes().GetIngresoCarreras();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
+
+        public void ListarIngresoCenevalGrupo()
+        {
+            try
+            {
+                DataGrid12.ItemsSource = new cn_reportes().GetIngresoCenevalGpo1();
+                DataGrid13.ItemsSource = new cn_reportes().GetIngresoCenevalGpo2();
+                DataGrid14.ItemsSource = new cn_reportes().GetIngresoCenevalGpo3();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+        }
         public void ListarIngresoPromedioGrupo()
         {
             try
@@ -60,6 +98,52 @@ namespace Trayectoria_escolar_wpf.Reportes
             {
                 MessageBox.Show(err.Message);
             }
+
+            //obtenemos los valores del grupo 1       
+            ChartValues<double> CantidadGrupo1Arr = new ChartValues<double>();
+            DataTable DgCantidadGrupo1Arr = ConvertToDataTable(new cn_reportes().GetIngresoEdadGpo1());
+            for (int a = 0; a < DgCantidadGrupo1Arr.Rows.Count; a ++)
+            {
+                CantidadGrupo1Arr.Add(double.Parse(DgCantidadGrupo1Arr.Rows[a]["Cantidad"].ToString()));
+            }
+            //obtenemos los valores del grupo 2
+            ChartValues<double> CantidadGrupo2Arr = new ChartValues<double>();
+            DataTable DgCantidadGrupo2Arr = ConvertToDataTable(new cn_reportes().GetIngresoEdadGpo2());
+            for (int a = 0; a < DgCantidadGrupo2Arr.Rows.Count; a++)
+            {
+                CantidadGrupo2Arr.Add(double.Parse(DgCantidadGrupo2Arr.Rows[a]["Cantidad"].ToString()));
+            }
+            //obtenemos los valores del grupo 3
+            ChartValues<double> CantidadGrupo3Arr = new ChartValues<double>();
+            DataTable DgCantidadGrupo3Arr = ConvertToDataTable(new cn_reportes().GetIngresoEdadGpo3());
+            for (int a = 0; a < DgCantidadGrupo3Arr.Rows.Count; a++)
+            {
+                CantidadGrupo3Arr.Add(double.Parse(DgCantidadGrupo3Arr.Rows[a]["Cantidad"].ToString()));
+            }
+
+            SeriesCollectionEdades = new SeriesCollection
+            {
+                new ColumnSeries
+                {
+                    Title = "Grupo1",
+                    Values = CantidadGrupo1Arr
+                }
+            };
+            //adding series will update and animate the chart automatically
+            SeriesCollectionEdades.Add(new ColumnSeries
+            {
+                Title = "Grupo2",
+                Values = CantidadGrupo2Arr
+            });
+            //adding series will update and animate the chart automatically
+            SeriesCollectionEdades.Add(new ColumnSeries
+            {
+                Title = "Grupo3",
+                Values = CantidadGrupo3Arr
+            });
+            LabelsEdades = new[] { "18-20", "20-24", "24-26", "34+" };
+            FormatterEdades = value => value.ToString("N");
+            DataContext = this;
         }
 
         public void ListarIngresoInstitucionEducativa()
@@ -87,6 +171,53 @@ namespace Trayectoria_escolar_wpf.Reportes
             {
                 MessageBox.Show(err.Message);
             }
+
+            //cargamos las graficas
+            ChartValues<double> ProcedenciaGrupo1Arr = new ChartValues<double>();
+            ChartValues<double> ProcedenciaGrupo2Arr = new ChartValues<double>();
+            
+            ChartValues<double> ProcedenciaGrupo3Arr = new ChartValues<double>();
+            //obtenemos los valores de los datatables
+            DataTable DgCantidadGrupo1Arr = ConvertToDataTable(new cn_reportes().GetIngresoProcedenciaGpo1());
+            for (int a = 0; a < DgCantidadGrupo1Arr.Rows.Count; a++)
+            {
+                ProcedenciaGrupo1Arr.Add(double.Parse(DgCantidadGrupo1Arr.Rows[a]["cantidad"].ToString()));
+            }
+            DataTable DgCantidadGrupo2Arr = ConvertToDataTable(new cn_reportes().GetIngresoProcedenciaGpo2());
+            for (int a = 0; a < DgCantidadGrupo1Arr.Rows.Count; a++)
+            {
+                ProcedenciaGrupo2Arr.Add(double.Parse(DgCantidadGrupo2Arr.Rows[a]["cantidad"].ToString()));
+            }
+            DataTable DgCantidadGrupo3Arr = ConvertToDataTable(new cn_reportes().GetIngresoProcedenciaGpo3());
+            for (int a = 0; a < DgCantidadGrupo1Arr.Rows.Count; a++)
+            {
+                ProcedenciaGrupo3Arr.Add(double.Parse(DgCantidadGrupo3Arr.Rows[a]["cantidad"].ToString()));
+            }
+            //agregamos las series
+            SeriesCollectionProcedencia = new SeriesCollection
+            {
+                new ColumnSeries
+                {
+                    Title = "Grupo1",
+                    Values = ProcedenciaGrupo1Arr
+                }
+            };
+            //adding series will update and animate the chart automatically
+            SeriesCollectionProcedencia.Add(new ColumnSeries
+            {
+                Title = "Grupo2",
+                Values = ProcedenciaGrupo2Arr
+            });
+            //adding series will update and animate the chart automatically
+            SeriesCollectionProcedencia.Add(new ColumnSeries
+            {
+                Title = "Grupo3",
+                Values = ProcedenciaGrupo3Arr
+            });
+            string[] arrray = DgCantidadGrupo2Arr.Rows.OfType<DataRow>().Select(k => k[0].ToString()).ToArray();
+            LabelsProcedencia = arrray;
+            FormatterEdades = value => value.ToString("N");
+            DataContext = this;
         }
 
         public void ListarIndiceGrupoSexo()

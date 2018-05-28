@@ -43,6 +43,18 @@
                         <DataGrid IsReadOnly="True" x:Name="DataGrid3"/>
                         <Label Content="Grupo3"></Label>
                         <DataGrid IsReadOnly="True" x:Name="DataGrid4"/>
+                        <lvc:CartesianChart Series="{Binding SeriesCollectionEdades}" LegendLocation="Left" Height="250" HorizontalAlignment="Stretch" Width="379">
+                            <lvc:CartesianChart.AxisX>
+                                <lvc:Axis Title="" Labels="{Binding LabelsEdades}">
+                                <lvc:Axis.Separator >
+                                    <lvc:Separator IsEnabled="False" Step="1"></lvc:Separator>
+                                </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisX>
+                            <lvc:CartesianChart.AxisY>
+                                <lvc:Axis Title="" LabelFormatter="{Binding FormatterEdades}"></lvc:Axis>
+                            </lvc:CartesianChart.AxisY>
+                        </lvc:CartesianChart>
                     </StackPanel>
                 </GroupBox>
                 <GroupBox Header="Índices de ingreso por Lugar de Procedencia" Width="Auto" Margin="10">
@@ -53,6 +65,18 @@
                         <DataGrid IsReadOnly="True" x:Name="DataGrid6" />
                         <Label Content="Grupo3"></Label>
                         <DataGrid IsReadOnly="True" x:Name="DataGrid7" />
+                        <lvc:CartesianChart Series="{Binding SeriesCollectionProcedencia}" LegendLocation="Left" Height="350" HorizontalAlignment="Stretch" Width="500">
+                            <lvc:CartesianChart.AxisX>
+                                <lvc:Axis Title="" Labels="{Binding LabelsProcedencia}">
+                                    <lvc:Axis.Separator >
+                                        <lvc:Separator IsEnabled="False" Step="1"></lvc:Separator>
+                                    </lvc:Axis.Separator>
+                                </lvc:Axis>
+                            </lvc:CartesianChart.AxisX>
+                            <lvc:CartesianChart.AxisY>
+                                <lvc:Axis Title="" LabelFormatter="{Binding FormatterEdades}"></lvc:Axis>
+                            </lvc:CartesianChart.AxisY>
+                        </lvc:CartesianChart>
                     </StackPanel>
                 </GroupBox>
                 <GroupBox Header="Índices de ingreso por Institución Educativa" Width="Auto" Margin="10">
@@ -68,6 +92,22 @@
                         <DataGrid IsReadOnly="True" x:Name="DataGrid10" />
                         <Label Content="Grupo3"></Label>
                         <DataGrid IsReadOnly="True" x:Name="DataGrid11" />
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Índices de ingreso por Grupo y Ceneval" Width="Auto" Margin="10">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Grupo1"></Label>
+                        <DataGrid IsReadOnly="True" x:Name="DataGrid12" />
+                        <Label Content="Grupo2"></Label>
+                        <DataGrid IsReadOnly="True" x:Name="DataGrid13" />
+                        <Label Content="Grupo3"></Label>
+                        <DataGrid IsReadOnly="True" x:Name="DataGrid14" />
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Índices de ingreso por Carreras" Width="Auto" Margin="10">
+                    <StackPanel Orientation="Horizontal">
+                        <DataGrid IsReadOnly="True" x:Name="DataGrid15" />
+
                     </StackPanel>
                 </GroupBox>
             </StackPanel>
