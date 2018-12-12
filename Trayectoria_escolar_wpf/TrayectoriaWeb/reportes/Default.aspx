@@ -49,12 +49,11 @@
     </div> 
  
     <!-- Sidebar -->
- <!-- Sidebar -->
     <aside class="sidebar sidebar-expand-lg sidebar-light sidebar-sm sidebar-color-info">
 
       <header class="sidebar-header bg-white">
         <span class="logo">
-          <a href="#"><img src="../../assets/img/logo-light.png" alt="logo"></a>
+          <a href="#"><img src="../../../assets/img/logo-light.png" alt="logo"></a>
         </span>
         <span class="sidebar-toggle-fold "></span>
       </header>
@@ -70,7 +69,7 @@
           </li>
 
           <li class="menu-item">
-            <a class="menu-link" href="../../../../alumnos/">
+            <a class="menu-link" href="../../../../../alumnos/">
               <span class="icon ti-user"></span>
               <span class="title">Alumnos</span>
             </a> 
@@ -82,21 +81,27 @@
             </a>
               <ul class="menu-submenu" >
               <li class="menu-item ">
-                <a class="menu-link" href="reportes/Default.aspx">
+                <a class="menu-link" href="Default.aspx">
                   <span class="dot"></span>
                   <span class="title">Indices de Ingreso</span>
                 </a>
               </li>
               <li class="menu-item">
-                <a class="menu-link" href="reportes/Desercion.aspx">
+                <a class="menu-link" href="Desercion.aspx">
                   <span class="dot"></span>
                   <span class="title">Indices de Desercion</span>
                 </a>
               </li>
                   <li class="menu-item">
-                <a class="menu-link" href="reportes/Eficiencias.aspx">
+                <a class="menu-link" href="Eficiencias.aspx">
                   <span class="dot"></span>
                   <span class="title">Eficiencia de titulacion</span>
+                </a>
+              </li>
+                  <li class="menu-item">
+                <a class="menu-link" href="Aprobacion.aspx">
+                  <span class="dot"></span>
+                  <span class="title">Indices de Aprobación</span>
                 </a>
               </li>
             </ul>

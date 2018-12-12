@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -69,6 +70,7 @@
     <Content Include="alumnos\Default.aspx" />
     <Content Include="alumnos\kardex.aspx" />
     <Content Include="empleadores\Default.aspx" />
+    <Content Include="InsertarCalificaciones.asmx" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\reportes.pubxml" />
     <None Include="Web.Debug.config">
@@ -80,10 +82,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="reportes\AlumnosReprobados.aspx" />
     <Content Include="reportes\Aprobacion.aspx" />
     <Content Include="reportes\Default.aspx" />
     <Content Include="reportes\Desercion.aspx" />
     <Content Include="reportes\Eficiencias.aspx" />
+    <Content Include="reportes\Reprobacion.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -117,7 +121,18 @@
     <Compile Include="empleadores\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="InsertarCalificaciones.asmx.cs">
+      <DependentUpon>InsertarCalificaciones.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportes\AlumnosReprobados.aspx.cs">
+      <DependentUpon>AlumnosReprobados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\AlumnosReprobados.aspx.designer.cs">
+      <DependentUpon>AlumnosReprobados.aspx</DependentUpon>
+    </Compile>
     <Compile Include="reportes\Aprobacion.aspx.cs">
       <DependentUpon>Aprobacion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,9 +161,26 @@
     <Compile Include="reportes\Eficiencias.aspx.designer.cs">
       <DependentUpon>Eficiencias.aspx</DependentUpon>
     </Compile>
+    <Compile Include="reportes\Reprobacion.aspx.cs">
+      <DependentUpon>Reprobacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reportes\Reprobacion.aspx.designer.cs">
+      <DependentUpon>Reprobacion.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Entidades\Entidades.csproj">
+      <Project>{ad0c1883-ef63-4937-bcad-0d37e4e31997}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Negocio\Negocio.csproj">
+      <Project>{d5e7ff4e-ed0b-479a-91b7-004e95f51b26}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

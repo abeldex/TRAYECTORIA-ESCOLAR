@@ -36,6 +36,8 @@ E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\bin\
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\bin\Debug\DAC.pdb
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\bin\Debug\Entidades.dll
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\bin\Debug\Entidades.pdb
-E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Debug\DAC.csprojResolveAssemblyReference.cache
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Debug\DAC.dll
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Debug\DAC.pdb
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Debug\DAC.csprojAssemblyReference.cache
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Debug\DAC.csproj.CoreCompileInputs.cache
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\DAC\obj\Debug\DAC.csproj.CopyComplete

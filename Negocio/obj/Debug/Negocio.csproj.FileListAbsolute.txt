@@ -42,6 +42,9 @@ E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Debug\Entidades.dll
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Debug\DAC.pdb
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Debug\Entidades.pdb
-E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Debug\Negocio.dll
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Debug\Negocio.pdb
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\bin\Debug\DAC.dll.config
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Negocio\obj\Debug\Negocio.csproj.CopyComplete

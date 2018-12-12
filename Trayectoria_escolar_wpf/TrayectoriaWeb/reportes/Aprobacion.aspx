@@ -50,7 +50,7 @@
       </div>
     </div> 
  
-    <!-- Sidebar -->
+      <!-- Sidebar -->
     <aside class="sidebar sidebar-expand-lg sidebar-light sidebar-sm sidebar-color-info">
 
       <header class="sidebar-header bg-white">
@@ -387,7 +387,7 @@
                                                                 
                                                                    <asp:Repeater ID="Repeater10" runat="server" DataSourceID="SqlTasa1">
                                                                         <ItemTemplate>
-                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %></td>
+                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %><br />Aprobados: <%# Eval("Aprobados") %> de <%# Eval("Total") %></td>
                                                                         </ItemTemplate>
                                                                     </asp:Repeater>     
                                                                    <asp:SqlDataSource runat="server" ID="SqlTasa1" ConnectionString='<%$ ConnectionStrings:TRAYECTORIA_ESCOLARConnectionString %>' SelectCommand="Sp_Tasas_Aprobacion" SelectCommandType="StoredProcedure">
@@ -403,7 +403,7 @@
                                                                 
                                                                    <asp:Repeater ID="Repeater11" runat="server" DataSourceID="SqlTasa2">
                                                                         <ItemTemplate>
-                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %></td>
+                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %><br />Aprobados: <%# Eval("Aprobados") %> de <%# Eval("Total") %></td>
                                                                         </ItemTemplate>
                                                                     </asp:Repeater>     
                                                                    <asp:SqlDataSource runat="server" ID="SqlTasa2" ConnectionString='<%$ ConnectionStrings:TRAYECTORIA_ESCOLARConnectionString %>' SelectCommand="Sp_Tasas_Aprobacion" SelectCommandType="StoredProcedure">
@@ -419,7 +419,7 @@
                                                                 
                                                                    <asp:Repeater ID="Repeater12" runat="server" DataSourceID="SqlTasa3">
                                                                         <ItemTemplate>
-                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %></td>
+                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %><br />Aprobados: <%# Eval("Aprobados") %> de <%# Eval("Total") %></td>
                                                                         </ItemTemplate>
                                                                     </asp:Repeater>     
                                                                    <asp:SqlDataSource runat="server" ID="SqlTasa3" ConnectionString='<%$ ConnectionStrings:TRAYECTORIA_ESCOLARConnectionString %>' SelectCommand="Sp_Tasas_Aprobacion" SelectCommandType="StoredProcedure">
@@ -435,7 +435,7 @@
                                                                 
                                                                    <asp:Repeater ID="Repeater13" runat="server" DataSourceID="SqlTasa4">
                                                                         <ItemTemplate>
-                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %></td>
+                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %><br />Aprobados: <%# Eval("Aprobados") %> de <%# Eval("Total") %></td>
                                                                         </ItemTemplate>
                                                                     </asp:Repeater>     
                                                                    <asp:SqlDataSource runat="server" ID="SqlTasa4" ConnectionString='<%$ ConnectionStrings:TRAYECTORIA_ESCOLARConnectionString %>' SelectCommand="Sp_Tasas_Aprobacion" SelectCommandType="StoredProcedure">
@@ -451,7 +451,7 @@
                                                                 
                                                                    <asp:Repeater ID="Repeater14" runat="server" DataSourceID="SqlTasa5">
                                                                         <ItemTemplate>
-                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %></td>
+                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %><br />Aprobados: <%# Eval("Aprobados") %> de <%# Eval("Total") %></td>
                                                                         </ItemTemplate>
                                                                     </asp:Repeater>     
                                                                    <asp:SqlDataSource runat="server" ID="SqlTasa5" ConnectionString='<%$ ConnectionStrings:TRAYECTORIA_ESCOLARConnectionString %>' SelectCommand="Sp_Tasas_Aprobacion" SelectCommandType="StoredProcedure">
@@ -490,7 +490,7 @@
                                                                 
                                                                    <asp:Repeater ID="Repeater15" runat="server" DataSourceID="SqlTasa6">
                                                                         <ItemTemplate>
-                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %></td>
+                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %><br />Aprobados: <%# Eval("Aprobados") %> de <%# Eval("Total") %></td>
                                                                         </ItemTemplate>
                                                                     </asp:Repeater>     
                                                                    <asp:SqlDataSource runat="server" ID="SqlTasa6" ConnectionString='<%$ ConnectionStrings:TRAYECTORIA_ESCOLARConnectionString %>' SelectCommand="Sp_Tasas_Aprobacion" SelectCommandType="StoredProcedure">
@@ -506,7 +506,7 @@
                                                                 
                                                                    <asp:Repeater ID="Repeater16" runat="server" DataSourceID="SqlTasa7">
                                                                         <ItemTemplate>
-                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %></td>
+                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %><br />Aprobados: <%# Eval("Aprobados") %> de <%# Eval("Total") %></td>
                                                                         </ItemTemplate>
                                                                     </asp:Repeater>     
                                                                    <asp:SqlDataSource runat="server" ID="SqlTasa7" ConnectionString='<%$ ConnectionStrings:TRAYECTORIA_ESCOLARConnectionString %>' SelectCommand="Sp_Tasas_Aprobacion" SelectCommandType="StoredProcedure">
@@ -522,7 +522,7 @@
                                                                 
                                                                    <asp:Repeater ID="Repeater17" runat="server" DataSourceID="SqlTasa8">
                                                                         <ItemTemplate>
-                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %></td>
+                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %><br />Aprobados: <%# Eval("Aprobados") %> de <%# Eval("Total") %></td>
                                                                         </ItemTemplate>
                                                                     </asp:Repeater>     
                                                                    <asp:SqlDataSource runat="server" ID="SqlTasa8" ConnectionString='<%$ ConnectionStrings:TRAYECTORIA_ESCOLARConnectionString %>' SelectCommand="Sp_Tasas_Aprobacion" SelectCommandType="StoredProcedure">
@@ -538,7 +538,7 @@
                                                                 
                                                                    <asp:Repeater ID="Repeater18" runat="server" DataSourceID="SqlTasa9">
                                                                         <ItemTemplate>
-                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %></td>
+                                                                        <td style="text-align:center; font-size:10px;"><span style="font-weight:400"><%# Eval("%") %>%</span><br><%# Eval("NombreMateria") %><br />Aprobados: <%# Eval("Aprobados") %> de <%# Eval("Total") %></td>
                                                                         </ItemTemplate>
                                                                     </asp:Repeater>     
                                                                    <asp:SqlDataSource runat="server" ID="SqlTasa9" ConnectionString='<%$ ConnectionStrings:TRAYECTORIA_ESCOLARConnectionString %>' SelectCommand="Sp_Tasas_Aprobacion" SelectCommandType="StoredProcedure">

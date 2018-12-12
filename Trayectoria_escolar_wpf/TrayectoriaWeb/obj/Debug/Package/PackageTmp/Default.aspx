@@ -34,13 +34,12 @@
         <span class="dot3"></span>
       </div>
     </div> 
- 
-    <!-- Sidebar -->
+     <!-- Sidebar -->
     <aside class="sidebar sidebar-expand-lg sidebar-light sidebar-sm sidebar-color-info">
 
       <header class="sidebar-header bg-white">
         <span class="logo">
-          <a href="index.php"><img src="assets/img/logo-light.png" alt="logo"></a>
+          <a href="#"><img src="../../../assets/img/logo-light.png" alt="logo"></a>
         </span>
         <span class="sidebar-toggle-fold "></span>
       </header>
@@ -49,14 +48,14 @@
         <ul class="menu menu-sm menu-bordery">
 
           <li class="menu-item active">
-            <a class="menu-link" href="../">
+            <a class="menu-link" href="/">
               <span class="icon ti-home"></span>
               <span class="title">Inicio</span>
             </a>
           </li>
 
           <li class="menu-item">
-            <a class="menu-link" href="alumnos/">
+            <a class="menu-link" href="../../../../../alumnos/">
               <span class="icon ti-user"></span>
               <span class="title">Alumnos</span>
             </a> 
@@ -66,8 +65,8 @@
               <span class="icon ti-pie-chart"></span>
               <span class="title">Reportes</span>
             </a>
-              <ul class="menu-submenu">
-              <li class="menu-item">
+              <ul class="menu-submenu" >
+              <li class="menu-item ">
                 <a class="menu-link" href="reportes/Default.aspx">
                   <span class="dot"></span>
                   <span class="title">Indices de Ingreso</span>
@@ -79,8 +78,20 @@
                   <span class="title">Indices de Desercion</span>
                 </a>
               </li>
+                  <li class="menu-item">
+                <a class="menu-link" href="reportes/Eficiencias.aspx">
+                  <span class="dot"></span>
+                  <span class="title">Eficiencia de titulacion</span>
+                </a>
+              </li>
+                  <li class="menu-item">
+                <a class="menu-link" href="reportes/Aprobacion.aspx">
+                  <span class="dot"></span>
+                  <span class="title">Indices de Aprobación</span>
+                </a>
+              </li>
             </ul>
-          </li>            
+          </li>        
 
 
         </ul>
@@ -88,7 +99,6 @@
 
     </aside>
     <!-- END Sidebar -->
-
     <!-- Topbar -->
     <header class="topbar">
       <div class="topbar-left">

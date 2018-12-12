@@ -419,6 +419,15 @@ namespace Trayectoria_escolar_wpf.Paginas
                 MessageBox.Show("Seleccione un alumno primero");
             }
         }
+
+        private void MenuItem_Click_5(object sender, RoutedEventArgs e)
+        {
+            //obtenemos los valores las columnas de la fila seleccionada para enviarlas a la ventana de edicion
+            TextBlock cuenta = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+            TextBlock nombre = dgvAlumnos.Columns[1].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+            Verkardex vk = new Verkardex(cuenta.Text, nombre.Text);
+            vk.Show();
+        }
     }
 
     

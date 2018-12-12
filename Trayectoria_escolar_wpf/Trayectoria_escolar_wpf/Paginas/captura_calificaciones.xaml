@@ -30,10 +30,12 @@
         </ResourceDictionary>
     </Window.Resources>
     <!---->
-    <ScrollViewer CanContentScroll="True">
+    
         <StackPanel x:Name="panel_principal">
+            <ScrollViewer CanContentScroll="True">
             <Grid VerticalAlignment="Top" Margin="0,0,0,0">
-        <Image x:Name="image" Source="../Resources/images/banner_acta.png" Stretch="None" HorizontalAlignment="Left" Height="181" Margin="0,51,0,-78" VerticalAlignment="Top" Width="1026"/>
+            
+                <Image x:Name="image" Source="../Resources/images/banner_acta.png" Stretch="None" HorizontalAlignment="Left" Height="181" Margin="0,51,0,-78" VerticalAlignment="Top" Width="1026"/>
 
 
         <materialDesign:ColorZone Padding="10" materialDesign:ShadowAssist.ShadowDepth="Depth2"
@@ -72,7 +74,7 @@
         <TextBox x:Name="txt_periodo" HorizontalAlignment="Left" Height="28" Margin="943,226,0,-53" TextWrapping="Wrap" Text="1" MaxLength="1" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black" SelectionBrush="Red" GotFocus="txt_periodo_GotFocus"/>
         <TextBox x:Name="txt_grupo" HorizontalAlignment="Left" Height="28" Margin="943,257,0,-84" TextWrapping="Wrap" Text="1" MaxLength="1" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black" SelectionBrush="Red"/>
         <DatePicker x:Name="txt_fecha" HorizontalAlignment="Left" Height="28" Margin="943,289,0,-116" VerticalAlignment="Top" Width="108" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="Black"/>   
-        <DataGrid HeadersVisibility="None" x:Name="dgvAlumnos" Margin="39,354,13,-536" AutoGenerateColumns="False"  Height="500" FontFamily="Arial" FontSize="13" EnableRowVirtualization="False" Background="White" BorderBrush="#89C1C1C1" CellEditEnding="dgvAlumnos_CellEditEnding" BeginningEdit="dgvAlumnos_BeginningEdit" CurrentCellChanged="dgvAlumnos_CurrentCellChanged" >
+        <DataGrid HeadersVisibility="None" x:Name="dgvAlumnos" Margin="0 350 0 0" AutoGenerateColumns="False"  Height="350" FontFamily="Arial" FontSize="13" EnableRowVirtualization="False" Background="White" BorderBrush="#89C1C1C1" CellEditEnding="dgvAlumnos_CellEditEnding" BeginningEdit="dgvAlumnos_BeginningEdit" CurrentCellChanged="dgvAlumnos_CurrentCellChanged" >
         	 <DataGrid.ContextMenu>
                 <ContextMenu >
                     <MenuItem Header="Editar Alumno" Click="MenuItem_Click" >
@@ -136,10 +138,11 @@
             <materialDesign:PackIcon Kind="AccountAlert" Height="24" Width="24" />
         </Button>
         <CheckBox x:Name="chk_complementaria" Content="COMPLEMENTARIA" HorizontalAlignment="Left" Margin="611,165,0,0" VerticalAlignment="Top" Width="215" FontFamily="Arial" FontWeight="Bold" FontSize="20" Foreground="Black"/>
+             
             </Grid>
-            
+            </ScrollViewer>
             
         </StackPanel>
-    </ScrollViewer>
+   
   
 </Window>

@@ -145,7 +145,6 @@
                     <h1>Trayectoria del Alumno <%= Request.QueryString["cuenta"] %></h1>
                    
         </div>
-    
             <div class="card" >
             <!-- Ingreso por grupo y sexo -->
                 <div class="card">   
@@ -197,14 +196,74 @@
                 </div>
               </div>
 
-
-
-        
-       
-       
-       
        </form>
+		   <div class="fab fab-fixed">
+      <a class="btn btn-float btn-info" href="#" title="Agregar Calificacion" data-toggle="modal" data-target="#modal_nueva"><i class="ti-plus"></i></a>
+    </div>
 
+
+		  <div class="modal modal-right fade" id="modal_nueva" tabindex="-1">
+<!--<div class="modal fade" id="modal_remi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">-->
+
+       <div class="modal-dialog" role="document">
+
+         <div class="modal-content">
+          <!--header del modal -->
+           <div class="modal-header bg-info">
+
+             <h5 class="modal-title text-secondary" id="exampleModalLabel">Registrar Nueva Calificación</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">×</span>
+             </button>
+           </div><!-- cierra header modal-->
+
+           <!-- abre body del modal -->
+           <div class="modal-body">
+
+             <h5>Información Personal</h5>
+             <div class="form-group">
+                 <label for="no_cuenta" class="form-control-label">Folio:</label>
+                 <input type="text" class="form-control" id="txt_folio" name="txt_folio" required>
+                 <small>Ingrese el folio que aparece en el acta</small>
+             </div>
+			 <div class="form-group">
+                 <label for="no_cuenta" class="form-control-label">Número de Cuenta:</label>
+                 <input type="text" class="form-control" id="txt_cuenta" name="txt_cuenta" required>
+             </div>
+			   <div class="form-group">
+                 <label for="no_cuenta" class="form-control-label">Nombre:</label>
+                 <input type="text" class="form-control" id="txt_nombre" name="txt_nombre" required>
+             </div>
+             <div class="form-group">
+                 <label for="periodo" class="form-control-label">Calificacion:</label>
+                  <select class="form-control" id="txt_cal" name="txt_cal">
+					<option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+					<option value="10">10</option>
+                  </select>  
+             </div>
+           </div> <!-- cierra el body del modal -->
+           <!-- abre el footer del modal -->
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" id="btn_cancelar_reg" data-dismiss="modal">Cancelar</button>
+             <button type="button" class="btn btn-primary" id="btn_guardar">Guardar</button>
+             
+           </div>
+           <!-- cierra el footer del modal -->
+
+         </div> <!-- cierra modal content -->
+       
+       </div> <!-- cierra modal dialog -->
+     
+     </div> <!--cierra modal --> 
 
       </div><!--/.main-content -->
         
@@ -219,11 +278,42 @@
           </footer>
     </main>
     <!-- END Main container -->
+	  <script type="text/javascript">
+		$(document).ready(function() {
+			$('#btn_guardar').click(function () {
+				var formData= {
+				  folio: $('#txt_folio').val(),
+				  cuenta: $('#txt_cuenta').val(),
+				  nombre: $('#txt_nombre').val(),
+				  calificacion: $('#txt_cal').val()
+				  };
+				$.ajax({
+					type: "POST", 
+					contentType: "application/json",
+					url: 'http://localhost:62941/InsertarCalificaciones.asmx/Insert',
+					data: formData,
+					dataType: "json",
+					success: function (result) {
+						$('#btn_cancelar_reg').trigger('click');
+						app.toast(result.d);
+					},
+					error: function(XMLHttpRequest, textStatus, errorThrown) { 
+						alert("Status: " + textStatus); alert("Error: " + errorThrown); 
+					}  
+				});
+		  });
+		});
+	</script>
       
         <!-- Scripts -->
     <script src="assets/js/core.min.js"></script>
     <script src="assets/js/app.js"></script>
-
+<script>
+//asignar el menu activo a la pestana actual
+    $(document).ready(function () {
+        alert('jqueryok!');
+        });
+</script>
   </body>
 </html>
 
