@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAC.dll" size="108544">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAC.dll" size="109056">
       <assemblyIdentity name="DAC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4nE3+58DL1ysQTHIbEeNX+uw7JvYFKpSnp+4+aLT2Mk=</dsig:DigestValue>
+        <dsig:DigestValue>uPPOjOsfQ0VFduSfXMehdkxJRgZGcXDh7s6OOvD+hrI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/ZMh2mlOLWSBlZ10Cav95DGGHhUjpkAGHfkKZi9VBrQ=</dsig:DigestValue>
+        <dsig:DigestValue>6L+w3qbpcodzxlT/YHnJkj8xnqepjDrGEf6GJKebaRw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -158,7 +158,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/prRl9cEE+5yOcmM4AI+64HIU0/R3KZrFodAHvH1TnI=</dsig:DigestValue>
+        <dsig:DigestValue>m9FX5zNZi7Fllbt/mRW9Fqa0OOUEavLF+Ppr/UExvBY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -175,14 +175,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Trayectoria_escolar_wpf.exe" size="1693696">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Trayectoria_escolar_wpf.exe" size="1700864">
       <assemblyIdentity name="Trayectoria_escolar_wpf" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZWBCYMQOKK2ED3R2vgmqmR3WLXcBxlvu7bOGsMm6bNQ=</dsig:DigestValue>
+        <dsig:DigestValue>TnSpMYBf0mRe6uUM21yXRxRJ6rxXaKWkhPkMiOSPc3g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

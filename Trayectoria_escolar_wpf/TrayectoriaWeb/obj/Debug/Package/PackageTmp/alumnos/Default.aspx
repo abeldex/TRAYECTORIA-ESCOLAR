@@ -165,6 +165,7 @@
                </div>
                 <div  class="col-md-3">
                    <a href="#" class="btn btn-success" id="btnBuscar">Consultar</a>
+                   <a href="capturar/" class="btn btn-primary" id="btnCapturar">Capturar Calificaciones</a>
                     <!--<a href="#" class="btn btn-warning" id="btnImprimir">Imprimir</a>-->
                 </div>
                 <hr />

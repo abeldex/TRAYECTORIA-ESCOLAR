@@ -45,6 +45,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.1\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -69,6 +72,8 @@
   <ItemGroup>
     <Content Include="alumnos\Default.aspx" />
     <Content Include="alumnos\kardex.aspx" />
+    <Content Include="capturar\capturar.asmx" />
+    <Content Include="capturar\Default.aspx" />
     <Content Include="empleadores\Default.aspx" />
     <Content Include="InsertarCalificaciones.asmx" />
     <Content Include="packages.config" />
@@ -106,6 +111,17 @@
     </Compile>
     <Compile Include="alumnos\kardex.aspx.designer.cs">
       <DependentUpon>kardex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="capturar\capturar.asmx.cs">
+      <DependentUpon>capturar.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="capturar\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="capturar\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

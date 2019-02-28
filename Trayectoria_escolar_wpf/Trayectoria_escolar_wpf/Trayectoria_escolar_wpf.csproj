@@ -145,11 +145,17 @@
     <Compile Include="Paginas\captura_extraordinarios.xaml.cs">
       <DependentUpon>captura_extraordinarios.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\egreso.xaml.cs">
+      <DependentUpon>egreso.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\folios_ordinarios.xaml.cs">
       <DependentUpon>folios_ordinarios.xaml</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Verkardex.xaml.cs">
       <DependentUpon>Verkardex.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\VerValoraciones.xaml.cs">
+      <DependentUpon>VerValoraciones.xaml</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReporteDesercionRezago.xaml.cs">
       <DependentUpon>ReporteDesercionRezago.xaml</DependentUpon>
@@ -204,11 +210,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Paginas\egreso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Paginas\folios_ordinarios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Paginas\Verkardex.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Paginas\VerValoraciones.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

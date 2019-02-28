@@ -427,4 +427,9 @@
     <Parameter Name="calificacion" Type="System.Double" DbType="Float" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.ins_egreso" Method="ins_egreso">
+    <Parameter Name="cuenta" Type="System.String" DbType="VarChar(9)" />
+    <Parameter Name="fecha" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

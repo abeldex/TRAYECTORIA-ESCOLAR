@@ -10,34 +10,37 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
   </PropertyGroup>
   <ItemGroup>
     <File Include="alumnos/Default.aspx">
-      <publishTime>05/29/2018 10:17:26</publishTime>
+      <publishTime>01/10/2019 10:17:38</publishTime>
     </File>
     <File Include="alumnos/kardex.aspx">
-      <publishTime>07/08/2018 18:23:35</publishTime>
+      <publishTime>08/07/2018 18:23:35</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>08/07/2018 18:16:00</publishTime>
     </File>
     <File Include="bin/DAC.dll">
-      <publishTime>11/30/2018 12:51:21</publishTime>
+      <publishTime>01/10/2019 10:22:13</publishTime>
     </File>
     <File Include="bin/DAC.dll.config">
       <publishTime>06/23/2017 19:04:59</publishTime>
     </File>
     <File Include="bin/DAC.pdb">
-      <publishTime>11/30/2018 12:51:21</publishTime>
+      <publishTime>01/10/2019 10:22:13</publishTime>
     </File>
     <File Include="bin/Entidades.dll">
-      <publishTime>11/30/2018 12:51:20</publishTime>
+      <publishTime>01/10/2019 10:22:11</publishTime>
     </File>
     <File Include="bin/Entidades.pdb">
-      <publishTime>11/30/2018 12:51:20</publishTime>
+      <publishTime>01/10/2019 10:22:11</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>06/15/2015 03:06:24</publishTime>
     </File>
     <File Include="bin/Negocio.dll">
-      <publishTime>11/30/2018 12:51:22</publishTime>
+      <publishTime>01/10/2019 10:22:13</publishTime>
     </File>
     <File Include="bin/Negocio.pdb">
-      <publishTime>11/30/2018 12:51:22</publishTime>
+      <publishTime>01/10/2019 10:22:13</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>06/18/2015 21:19:46</publishTime>
@@ -76,10 +79,16 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>06/18/2015 21:19:46</publishTime>
     </File>
     <File Include="bin/TrayectoriaWeb.dll">
-      <publishTime>11/30/2018 15:33:52</publishTime>
+      <publishTime>01/11/2019 13:14:14</publishTime>
     </File>
     <File Include="bin/TrayectoriaWeb.pdb">
-      <publishTime>11/30/2018 15:33:52</publishTime>
+      <publishTime>01/11/2019 13:14:14</publishTime>
+    </File>
+    <File Include="capturar/capturar.asmx">
+      <publishTime>01/11/2019 11:40:32</publishTime>
+    </File>
+    <File Include="capturar/Default.aspx">
+      <publishTime>01/11/2019 13:26:57</publishTime>
     </File>
     <File Include="Default.aspx">
       <publishTime>05/29/2018 10:15:53</publishTime>
@@ -88,10 +97,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/07/2018 19:16:29</publishTime>
     </File>
     <File Include="InsertarCalificaciones.asmx">
-      <publishTime>05/07/2018 11:53:28</publishTime>
+      <publishTime>07/05/2018 11:53:28</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>03/13/2018 16:19:55</publishTime>
+      <publishTime>01/10/2019 11:05:34</publishTime>
     </File>
     <File Include="reportes/AlumnosReprobados.aspx">
       <publishTime>11/30/2018 14:34:06</publishTime>
@@ -112,7 +121,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>11/30/2018 15:41:15</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/07/2018 13:38:39</publishTime>
+      <publishTime>01/11/2019 13:27:50</publishTime>
     </File>
   </ItemGroup>
 </Project>

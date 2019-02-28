@@ -28,7 +28,7 @@ namespace DAC
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnCreated();
     partial void Insertcalificaciones3(calificaciones3 instance);
     partial void Updatecalificaciones3(calificaciones3 instance);
@@ -519,6 +519,13 @@ namespace DAC
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), folio, cuenta, nombre, calificacion);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ins_egreso")]
+		public int ins_egreso([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(9)")] string cuenta, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(10)")] string fecha)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), cuenta, fecha);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.calificaciones3")]
@@ -537,7 +544,7 @@ namespace DAC
 		
 		private double _calificacion;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
@@ -703,7 +710,7 @@ namespace DAC
 		
 		private string _tipo;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
@@ -947,7 +954,7 @@ namespace DAC
 		
 		private int _idCarrera;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
@@ -1077,7 +1084,7 @@ namespace DAC
 		
 		private string _nombre_maestro;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
@@ -1163,7 +1170,7 @@ namespace DAC
 		
 		private string _nombre;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
@@ -1251,7 +1258,7 @@ namespace DAC
 		
 		private int _estado;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
@@ -1363,7 +1370,7 @@ namespace DAC
 		
 		private System.Nullable<char> _UAS;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
@@ -1700,7 +1707,7 @@ namespace DAC
 		
 		private string _Practicas;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
@@ -2592,7 +2599,7 @@ namespace DAC
 		
 		private string _tipo;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
@@ -3306,7 +3313,7 @@ namespace DAC
 		
 		private double _calificacion;
 		
-    #region Definiciones de métodos de extensibilidad
+    #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();

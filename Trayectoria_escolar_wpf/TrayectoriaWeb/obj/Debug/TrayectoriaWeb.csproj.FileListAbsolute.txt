@@ -27,3 +27,4 @@ E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayecto
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_escolar_wpf\TrayectoriaWeb\obj\Debug\TrayectoriaWeb.csprojAssemblyReference.cache
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_escolar_wpf\TrayectoriaWeb\obj\Debug\TrayectoriaWeb.csproj.CoreCompileInputs.cache
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_escolar_wpf\TrayectoriaWeb\obj\Debug\TrayectoriaWeb.csproj.CopyComplete
+E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_escolar_wpf\TrayectoriaWeb\bin\AjaxControlToolkit.dll

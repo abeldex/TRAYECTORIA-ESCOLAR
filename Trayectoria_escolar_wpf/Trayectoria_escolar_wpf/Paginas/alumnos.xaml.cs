@@ -313,6 +313,8 @@ namespace Trayectoria_escolar_wpf.Paginas
                 if (result == MessageBoxResult.Yes)
                 {
                     new cn_alumnos().MarcarEgresado(cuenta.Text);
+                    egreso eg = new egreso(cuenta.Text);
+                    eg.ShowDialog();
                     Listar();
                 }
             }
@@ -426,6 +428,14 @@ namespace Trayectoria_escolar_wpf.Paginas
             TextBlock cuenta = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
             TextBlock nombre = dgvAlumnos.Columns[1].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
             Verkardex vk = new Verkardex(cuenta.Text, nombre.Text);
+            vk.Show();
+        }
+
+        private void MenuItem_Click_6(object sender, RoutedEventArgs e)
+        {
+            //obtenemos los valores las columnas de la fila seleccionada para enviarlas a la ventana de edicion
+            TextBlock cuenta = dgvAlumnos.Columns[0].GetCellContent(dgvAlumnos.SelectedItem) as TextBlock;
+            VerValoraciones vk = new VerValoraciones(cuenta.Text);
             vk.Show();
         }
     }

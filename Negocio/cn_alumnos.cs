@@ -256,6 +256,21 @@ namespace Negocio
             }
         }
 
+        public void FechaEgreso(string cuenta, string fecha)
+        {
+            using (contexto = new DataClassesTrayectoriaDataContext())
+            {
+                try
+                {
+                    contexto.ins_egreso(cuenta,fecha);
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+            }
+        }
+
         public void Marcartitulado(string cuenta)
         {
             using (contexto = new DataClassesTrayectoriaDataContext())
