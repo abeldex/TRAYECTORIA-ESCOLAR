@@ -12,9 +12,9 @@ DEBUG;TRACE
 E:\Users\Computo1\Documents\Proyectos Visual Studio\TRAYECTORIA ESCOLAR\Trayectoria_escolar_wpf\Trayectoria_escolar_wpf\App.xaml
 161868802614
 
-202106003316
+241724131616
 252024144207
 MainWindow.xaml;Paginas\add_prepa.xaml;Paginas\agregar_alumno.xaml;Paginas\alumnos.xaml;Paginas\alumno_estado.xaml;Paginas\buscar_alumno.xaml;Paginas\captura_calificaciones.xaml;Paginas\captura_extraordinarios.xaml;Paginas\editar_alumno.xaml;Paginas\egreso.xaml;Paginas\folios_ordinarios.xaml;Paginas\Verkardex.xaml;Paginas\VerValoraciones.xaml;Reportes\ReporteDesercionRezago.xaml;Reportes\Reportes.xaml;Test.xaml;
 resources\images\splash.png
-False
+True
 
